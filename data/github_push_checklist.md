@@ -2,7 +2,7 @@
 
 > 仓库：`github.com/5uCapp0/EqWM-FPS`（Public，2026-10-01 18:0x 已推送 M4：`paper/eqwm_main.tex/.pdf` + 4 张矢量图）。
 > 本清单**只评估打包，不实际 push**。本机无 GitHub 凭据、无 gh CLI、无 git clone；实际 push 由 MainAgent 稍后走浏览器 PAT 流程执行。
-> 生成日期：2026-10-02。
+> 定稿策略（2026-10-02 更新）：**主版本 = acmart 双栏 `eqwm_acmart_v2`**（与 AS-Park 同款，含修正版方法总览图 fig:overview）；elsarticle `eqwm_main_v2` 降级为期刊投稿归档备选，本地保留、不作为主版本宣传、默认不推。
 
 ---
 
@@ -12,19 +12,19 @@
 
 | 文件 | 状态 | 是否建议推送 | 说明 |
 |---|---|---|---|
-| `paper/eqwm_acmart.tex` / `.pdf` | 新（19:29，acmart sigconf 版，基线未含） | **建议推** | 美观预览版（Overleaf/arXiv）；与 elsarticle 版并存 |
-| `paper/eqwm_acmart_v2.tex` / `.pdf` | 新（本次润色，6 页，0 fatal/0 undefined） | **建议推** | acmart 润色定稿 |
-| `paper/eqwm_main_v2.tex` / `.pdf` | 新（本次润色，16 页，0 fatal/0 undefined/0 warning） | **建议推** | elsarticle 润色定稿（投稿 Neural Networks 用） |
-| `paper/references.bib` | 未改 | 随 v2 一并推（若基线已有则跳过） | 24 条，内容未动 |
-| `paper/figs/*.pdf`（4 张） | 未改 | 已在基线 | 无需重推 |
-| `data/optimization_report.md` | 新（本次内部评审报告） | **建议不推**（加入 .gitignore） | 与 `data/m4_review.md` 同类——内部工作/评审记录，按脱敏清单不进公开仓库 |
-| `data/github_push_checklist.md` | 新（本文件） | **建议不推**（加入 .gitignore） | 内部打包清单 |
-| `data/m4_review.md` | 已有，已 gitignore | 保持不推 | 基线已排除 |
-| `项目进度.md` | 已有，已 gitignore | 保持不推 | 基线已排除 |
-| `README.md` | 已有 | **建议修订后再推** | 见第 4 节：现有 README 数字偏乐观/陈旧，需与论文诚实结论对齐 |
-| `paper/main.tex`、`paper/main_upload.tex` | 已有（18:59 / 17:14） | **不建议单独维护** | 经评估：二者约为 `eqwm_main.tex` 的 Overleaf 副本/变体，属陈旧重复；建议仓库以 `eqwm_main*.tex` 为准，这两个副本删除或注明"Overleaf 镜像，勿改" |
+| `paper/eqwm_acmart_v2.tex` / `.pdf` | 新（acmart sigconf 双栏，6 页，0 fatal/0 undefined） | **主版本，建议推** | 含修正版方法总览图 `fig:overview`；本仓库主论文 |
+| `paper/figs/eqwm_fig1.pdf` | 新（修正版矢量方法总览，已导出） | **建议推** | 与 acmart v2 配套；m*/n scaling law 橙框、WM 4 子模块、reward 头、反对称 L/R 动作头、imagination 闭环 |
+| `paper/references.bib` | 未改 | 随主版本推（基线已有则跳过） | 24 条，内容未动 |
+| `paper/eqwm_main_v2.tex` / `.pdf` | 新（elsarticle，16 页） | **默认不推（归档备选）** | 期刊（Neural Networks）投稿备选，本地保留；不作为主版本宣传，不进推送集 |
+| `paper/eqwm_acmart.tex` / `.pdf`（19:29 原版） | 基线未含 | 可不单独推 | 已被 `eqwm_acmart_v2` 取代；如需保留历史可并入 |
+| `paper/figs/fig_*.pdf`（4 张结果图） | 未改 | 已在基线 | 无需重推 |
+| `data/optimization_report.md` | 新（内部评审报告） | **不推**（.gitignore） | 内部工作/评审记录，按脱敏清单不进公开仓库 |
+| `data/github_push_checklist.md` | 新（本文件） | **不推**（.gitignore） | 内部打包清单 |
+| `data/m4_review.md` / `项目进度.md` | 已有，已 gitignore | 保持不推 | 基线已排除 |
+| `README.md` | 已有（已按诚实口径修订） | **建议推** | 主版本=acmart v2；已清理 53%/2-3×/seed0 单值/M_eff 15.7/项目状态，并补 ablation s13/s14 诚实说明段 |
+| `paper/main.tex`、`paper/main_upload.tex` | 已有（18:59 / 17:14） | **不建议单独维护** | 约为 `eqwm_main.tex` 的 Overleaf 副本/变体，陈旧重复；仓库以 `eqwm_acmart_v2` 为准 |
 
-> 注：`data/ablation.json`（21:14，s13/s14 重跑）与论文表格数字不一致，已在 `optimization_report.md` 第四节说明。**是否随仓库推送该数据文件需作者先裁定**：若推送，README/论文须能解释它与报告版三-seed 表格的关系，避免公开数据与论文表格对不上。
+> 注：`data/ablation.json`（21:14，s13/s14 重跑）与论文三-seed 冻结表口径不一致，已在 `optimization_report.md` 第四节与 README「实验三消融数据说明」如实标注为探索性重跑、不作论文结论依据。是否随仓库推送该文件仍需作者裁定。
 
 ---
 
@@ -32,16 +32,17 @@
 
 ```
 EqWM-FPS/
-├── README.md                 # 研究问题 / 目录 / 环境 / 复现命令 / 结果摘要（诚实数字）/ 论文状态
+├── README.md                 # 主版本=acmart v2 / 结果摘要（诚实数字）/ 论文状态
 ├── .gitignore
-├── code/                     # env/ models/ training/ experiments/ utils/  + run_*.py
-├── data/                     # 实验输出 JSON（公开结果数据）；内部 *.md 评审报告排除
-├── figs/                     # 项目根 png 图（可选）
-└── paper/
-    ├── eqwm_main_v2.tex / .pdf        # elsarticle 投稿版（主）
-    ├── eqwm_acmart_v2.tex / .pdf      # acmart 预览版
-    ├── references.bib
-    └── figs/                          # 4 张矢量图 + 未来 eqwm_fig1.pdf
+├── code/                     # env/ models/ training/ experiments/ utils/ + run_*.py
+├── data/                     # 公开结果 JSON；内部 *.md 评审报告排除
+├── paper/
+│   ├── eqwm_acmart_v2.tex / .pdf   # 主论文（acmart 双栏，含 fig:overview）
+│   ├── references.bib
+│   └── figs/
+│       ├── eqwm_fig1.pdf            # 修正版方法总览
+│       └── fig_reward / fig_fewshot / fig_ablation / fig_meff .pdf
+└── (本地，不推) eqwm_main_v2.tex/.pdf   # elsarticle 期刊投稿归档备选
 ```
 
 ---
@@ -57,39 +58,33 @@ data/optimization_report.md
 data/github_push_checklist.md
 ```
 > 其余编译产物（`paper/*.aux *.bbl *.blg *.out *.log`、`paper/.miktex/`）已在规则内，v2 编译产物不会误入。
+> elsarticle `eqwm_main_v2.*` 仅本地保留；若日后要推再单独处理，默认不加进推送集。
 
 ---
 
-## 4. README.md 需修订的点（推送前）
+## 4. README.md 修订点（已完成，推送前核对）
 
-现有 `README.md` 的"实验结果摘要"仍为写作早期的乐观/陈旧口径，**与论文诚实结论不一致**，公开前须改：
-
-- "实验一 ……（约降 53%）；开环 MSE@10/20 步低 20%/28%" → 论文已定位为**奖励头跨种子稳定性提升**（0.104±0.025 vs 0.223±0.099），并显式否定"53% 准确率"；开环 MSE 因指标有缺陷**已删除**。
-- "实验二 ……（约 2–3× 样本效率）" → 论文口径为 **order-of-2×（实测 ~1.3–2.7×），2 seeds、曲线平坦噪声、Eq/Std 不可区分**。
-- "实验三消融（seed0）both_eq 491±187 / wm_eq_only 401±100 ……" → 论文表格为**四配置 447.1±37.7 / 425.3±28.5 / 426.7±26.7 / 449.8±46.7，425–450 区间重叠不可区分、none-eq 数值反而最高**；seed0 单值口径已过时。
-- "教材 ch15.7 的 M_eff≈15.7 主张不稳健" → 公开 README 不应出现"教材/ch15.7"等内部痕迹；改为"bootstrap 乘子 M_eff>1 非单调、跨机不一致，作为 open problem"。
-- 顶部"项目状态：实验中（实验三/实验四进行中）" → 更新为"论文 M4 完成，v2 润色稿就绪，投稿 Neural Networks / ECAI·UAI"。
+- ~~"实验一（约降 53%）；开环 MSE 低 20%/28%"~~ → 已改为**奖励头跨种子稳定性**（0.104±0.025 vs 0.223±0.099），PSNR/SSIM 两者相当、标准略优；删除 53% 与开环 MSE。
+- ~~"实验二（约 2–3× 样本效率）"~~ → 已改为 **order-of-2×（实测 ~1.3–2.7×），2 seeds、Eq/Std 不可区分**。
+- ~~"实验三消融（seed0）491±187…"~~ → 已改为三-seed 冻结表 447.1±37.7 / 425.3±28.5 / 426.7±26.7 / 449.8±46.7（425–450 重叠），并补 **s13/s14 探索性重跑诚实说明段**。
+- ~~"教材 ch15.7 的 M_eff≈15.7"~~ → 已删内部痕迹；改为 M_eff>1 非单调/跨机不一致、降级为 open problem，28.3 标 raw pre-clip。
+- ~~"项目状态：实验中"~~ → 已改为"主版本 = acmart 双栏 eqwm_acmart_v2（含修正版方法总览图 fig:overview）；elsarticle 为期刊投稿备选，本地保留"。
+- 全文已无 教材 / ch15.7 / 15.7 / 豆包 / agent / OCR 等内部痕迹。
 
 ---
 
 ## 5. 建议 commit 粒度与 message
 
-```
-# 1) 论文润色定稿（acmart + elsarticle v2）
-git add paper/eqwm_main_v2.tex paper/eqwm_main_v2.pdf \
-        paper/eqwm_acmart_v2.tex paper/eqwm_acmart_v2.pdf \
-        paper/references.bib
-git -c user.name="5uCapp0" -c user.email="5uCapp0@users.noreply.github.com" \
-    commit -m "paper: add polished v2 (elsarticle submission + acmart preview)"
+```bash
+# 1) 主论文：acmart v2（含修正版方法总览图）
+git add paper/eqwm_acmart_v2.tex paper/eqwm_acmart_v2.pdf         paper/figs/eqwm_fig1.pdf paper/references.bib
+git -c user.name="5uCapp0" -c user.email="5uCapp0@users.noreply.github.com"     commit -m "paper: acmart two-column main version with corrected architecture overview"
 
-# 2) acmart 预览版（若基线确未含 eqwm_acmart.tex）
-git add paper/eqwm_acmart.tex paper/eqwm_acmart.pdf
-git commit -m "paper: add acmart sigconf preview edition"
-
-# 3) README 与 .gitignore（修订诚实数字 + 排除内部报告）
+# 2) README 与 .gitignore（诚实数字 + 排除内部报告）
 git add README.md .gitignore
-git commit -m "docs: align README with honest empirical findings; ignore internal review reports"
+git commit -m "docs: align README with honest findings; ignore internal review reports"
 ```
+> elsarticle `eqwm_main_v2.*` 默认**不进上述 commit**（归档备选，本地保留）。
 > commit 邮箱一律用 `5uCapp0@users.noreply.github.com`（GitHub noreply），不用真实邮箱（脱敏要求）。
 
 ---
@@ -110,5 +105,6 @@ git commit -m "docs: align README with honest empirical findings; ignore interna
 ## 7. 本次不做 / 暂缓
 
 - 不实际 push、不登录、不动浏览器（无凭据，按要求只出清单）。
-- `data/ablation.json`（s13/s14）与论文表格的取舍留给作者裁定（见 `optimization_report.md` 第四节），本清单不替作者决定是否公开该文件。
-- 新增方法总览 Figure 1（`eqwm_fig1`）需作者先把 SVG 导出为矢量 `paper/figs/eqwm_fig1.pdf` 并按 `optimization_report.md` 第六节修正"λ\*/parameterized symmetry"等概念后，再单独提一个 `paper: add architecture overview figure` commit。
+- 方法总览 Figure 1（`eqwm_fig1.pdf`）**已完成**：SVG 已按修正清单改（删 λ*/closed-form 与 parameterized symmetry；补 m*/n scaling law 橙框、WM 4 子模块、reward 头、反对称 L/R 动作头、imagination 闭环、底部实验条四对应）、已导出矢量 PDF、已用跨栏 `figure*[t]` 插入 acmart §4 Method 开头、重编译 6 页 0 fatal/0 undefined。
+- `data/ablation.json`（s13/s14）是否公开仍留作者裁定（见 `optimization_report.md` 第四节）。
+- **表格栏宽修复（2026-10-02）**：acmart 双栏下三张三线表（hyper-parameters / WM comparison / ablation）已加 `\small`（hyper 表降 `\footnotesize`）、`\tabcolsep=3–4pt`、`@{}` 收边；WM comparison 表头缩写为 Equiv. WM / Std. WM，ablation 配置标签列改 `p{0.64\columnwidth}` 换行。表内数字/单位/表注一字未改、行列结构不变。表相关 Overfull \hbox 由 3 处降为 0（全文 Overfull 12→9，余 9 处为正文数学/证明行，非表格，不在本次范围）。

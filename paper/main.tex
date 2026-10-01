@@ -1,42 +1,39 @@
-% ============================================================
-% EqWM-FPS: Equivariant World Models for Sample-Efficient
-% Imagination Training in a First-Person Shooter
-% Submitted to: Neural Networks (Elsevier)
+%% eqwm_acmart_v2.tex - EqWM-FPS paper, acmart sigconf (anonymous) edition
+%% v2: language/structure/typography/LaTeX pass over eqwm_acmart.tex (2026-10-02).
+%% All reported numbers, seed counts, and honest limitations are unchanged from
+%% the frozen 2026-10-01 19:29 manuscript; only prose register, table/figure
+%% presentation, and bibliography wiring are refined.
+%% (pretty layout edition for Overleaf/arXiv preview; elsarticle edition kept as eqwm_main_v2.tex for Neural Networks submission)
+\documentclass[sigconf]{acmart}
+\settopmatter{printccs=false, printacmref=false, printfolios=true}
+\copyrightyear{2026}
+\acmYear{2026}
+\acmConference[Preprint]{Preprint}{2026}{2026}
+\acmBooktitle{Preprint 2026}
 %
-% To switch to ECAI/UAI: change the \documentclass line and the
-% \journalnote below; body content is unchanged.
-% ============================================================
-\documentclass[preprint,12pt]{elsarticle}
-% ECAI/UAI switch: replace the line above with, e.g.,
-%   \documentclass[10pt,a4paper]{article}
-% and use natbib/icml style; the body is journal-agnostic.
-
-\journal{Neural Networks}
-
 \usepackage{graphicx}
-\usepackage{amsmath,amssymb}
 \usepackage{booktabs}
 \usepackage{multirow}
-\usepackage{xcolor}
 \usepackage{url}
 \usepackage{enumitem}
-% graphicspath disabled: figs are in project root for Overleaf sync
-
-% theorem-like environments
+\graphicspath{{figs/}}
+%
 \newtheorem{theorem}{Theorem}
 \newtheorem{proposition}{Proposition}
-
-\bibliographystyle{elsarticle-num}
+%
+\renewcommand{\shortauthors}{Wu}
+%
 
 \begin{document}
 
-\begin{frontmatter}
+
 
 \title{Equivariant World Models for Sample-Efficient Imagination\\
 Training in a First-Person Shooter: An Empirical Study}
 
-\author[1]{Anonymous}
-\address[1]{Anonymous Institution (double-blind review)}
+\author{Jiabao Wu}
+\affiliation{\institution{Tsinghua University}\country{China}}
+\email{13713915258@163.com}
 
 \begin{abstract}
 First-person shooter (FPS) games are a stress test for deep reinforcement
@@ -51,7 +48,7 @@ equivariance by group averaging across the encoder, recurrent dynamics,
 decoder, and reward head, evaluated on the ViZDoom \texttt{health\_gathering}
 benchmark \cite{vizdoom2016}. We also derive PAC-Bayes-style bounds that
 decompose the imagination-training risk into world-model bias and
-statistical-estimation terms, and a scaling law for the optimal
+statistical-estimation terms, together with a scaling law for the optimal
 real-to-imagination ratio. Our empirical findings are deliberately reported
 without inflation. (i)~With only $10$k environment steps and three seeds, the
 equivariant world model has a substantially more stable reward head: reward
@@ -79,11 +76,9 @@ present the theory as an upper bound and a scaling law, and we explicitly
 mark where experiments support, weakly support, or contradict it.
 \end{abstract}
 
-\begin{keyword}
-Equivariant neural networks \sep World models \sep Imagination training \sep Reinforcement learning \sep First-person shooter \sep PAC-Bayes
-\end{keyword}
+\keywords{Equivariant neural networks, World models, Imagination training, Reinforcement learning, First-person shooter, PAC-Bayes}
 
-\end{frontmatter}
+\maketitle
 
 %% ===================== 1. INTRODUCTION =====================
 \section{Introduction}
@@ -229,8 +224,15 @@ $R(\rho)\le R_S(\rho)+\sqrt{(\mathrm{KL}(\rho\|\pi)+\log(2\sqrt n/\delta))/(2n)}
 %% ===================== 4. METHOD =====================
 \section{Method}\label{sec:method}
 
+\begin{figure*}[t]
+  \includegraphics[width=0.95\textwidth]{eqwm_fig1.pdf}
+  \caption{Overview of the equivariant world model and imagination training. The world model enforces hard $\mathbb Z_2$ equivariance by group averaging across an Encoder, a ConvGRU dynamics cell, a Decoder, and a reward head; it predicts both frame reconstruction and a scalar reward. The equivariant PPO policy is updated inside the learned model on imagination rollouts, and the analysis bounds the optimal real:imagination ratio $m^*/n$ only qualitatively.}
+  \label{fig:overview}
+\end{figure*}
+
+
 \subsection{Equivariant $\mathbb Z_2$ world model}
-The world model $\hat M_\phi$ has four parts.
+The world model $\hat M_\phi$ has four parts (Figure~\ref{fig:overview}).
 \emph{Encoder} $E_\phi$: three strided convolutions map a
 $64\times64\times3$ frame to an $8\times8\times z$ latent map
 ($z=32$, base channels $16$). Every convolution is a group-averaging layer
@@ -276,7 +278,8 @@ rather than tuned. Table~\ref{tab:hyper} lists all hyper-parameters.
 except for group averaging). Exp.\,1 trained the world model for 50 epochs;
 the imagination runs below use 30 initial epochs.}
 \label{tab:hyper}
-\begin{tabular}{lll}
+\footnotesize\setlength{\tabcolsep}{3pt}
+\begin{tabular}{@{}lll@{}}
 \toprule
 Group & Hyper-parameter & Value \\
 \midrule
@@ -368,10 +371,10 @@ for a constant $C$ that depends on horizon, discount, and KL budget.
 We emphasize that Theorem~\ref{th:ratio} is a \emph{scaling law}, not a
 numerically tight formula: substituting the pixel MSE
 $\varepsilon_{\rm WM}\approx10^{-2}$ literally yields $m^*/n=10^4$, which is
-absurdly large because the constant and the unit of $\varepsilon_{\rm WM}$
-are uncalibrated. We therefore clip the ratio to a fixed range in practice
-and treat the theorem as qualitative guidance, exactly as
-Section~\ref{sec:exp} reports.
+unrealistically large because the constant and the units of
+$\varepsilon_{\rm WM}$ are uncalibrated. We therefore clip the ratio to a
+fixed range in practice and treat the theorem as qualitative guidance,
+exactly as Section~\ref{sec:exp} reports.
 
 \begin{proposition}[Estimating the multiplier by bootstrap]\label{prop:meff}
 The multiplier $N_{\rm eff}/n$ can be estimated by bootstrap
@@ -400,8 +403,8 @@ Theorem~\ref{th:wm}; it is not the same object as the sample count $N_{\rm eff}$
 We use ViZDoom \texttt{health\_gathering}: the agent navigates a maze to
 collect health packs while taking damage; observations are $64\times64\times3$
 RGB frames with frame skip $4$. The reward is near-degenerate: the agent is
-punished on death, so roughly $99.3\%$ of non-terminal steps carry the same
-terminal-shaped offset. This sparsity makes the reward head easy to overfit
+penalized only at death, so roughly $99.3\%$ of non-terminal steps carry an
+identical reward offset. This sparsity makes the reward head easy to overfit
 and motivates the stability analysis below. The small model (base channels
 $16$, latent $8\times8\times32$) is used throughout. We report
 mean$\pm$std over seeds and state the seed count explicitly for every
@@ -419,12 +422,13 @@ with a well-defined per-frame estimate are reported; the earlier
 concatenated-rollout open-loop MSE was computed with a flawed metric and is
 omitted (see text).}
 \label{tab:wm}
-\begin{tabular}{lccc}
+\small\setlength{\tabcolsep}{4pt}
+\begin{tabular}{@{}lccc@{}}
 \toprule
-Metric & Equivariant WM & Standard WM & Note \\
+Metric & Equiv. WM & Std. WM & Note \\
 \midrule
-PSNR (dB)            & $20.62\pm1.59$ & $21.78\pm0.66$ & std slightly better \\
-SSIM                 & $0.272\pm0.069$ & $0.321\pm0.026$ & std slightly better \\
+PSNR (dB)            & $20.62\pm1.59$ & $21.78\pm0.66$ & standard slightly better \\
+SSIM                 & $0.272\pm0.069$ & $0.321\pm0.026$ & standard slightly better \\
 \textbf{Reward MAE}  & $\mathbf{0.104\pm0.025}$ & $0.223\pm0.099$ & \textbf{stable; see Fig.~\ref{fig:reward}} \\
 \bottomrule
 \end{tabular}
@@ -496,9 +500,10 @@ returns are in Table~\ref{tab:ablation} and Fig.~\ref{fig:ablation}.
 \begin{table}[t]
 \centering
 \caption{Ablation: where equivariance is placed (3 train seeds; robust
-evaluation). All four means overlap inside one standard deviation.}
+evaluation). All four means overlap within one standard deviation.}
 \label{tab:ablation}
-\begin{tabular}{lcc}
+\small\setlength{\tabcolsep}{4pt}
+\begin{tabular}{@{}p{0.64\columnwidth}c@{}}
 \toprule
 Configuration & Final return (robust) \\
 \midrule
@@ -541,7 +546,7 @@ reconstructed from terminal-log OCR with incomplete per-replicate arrays
 ($5$ epochs: no per-replicate list retained; $20$ epochs: only $3$ of $15$
 replicates), whereas the $40$-epoch cloud point is complete (all $15$
 replicates, consistent across three OCR reads). We therefore treat the local
-run as primary and the cloud run as suggestive cross-check only. The ratio
+run as primary and the cloud run as a suggestive cross-check only. The ratio
 is non-monotone and the two runs disagree at $40$ epochs, where the
 equivariant model even diverges on several local bootstrap replicates (test
 error rising to $0.04$--$0.055$). We therefore do
@@ -597,6 +602,7 @@ early stopping, and a larger $B$ are required before any multiplier-above-$1$
 claim, and the cloud cross-check should be re-run to disk without OCR.
 We release the configuration and result files to support reproduction.
 
+\bibliographystyle{ACM-Reference-Format}
 \bibliography{references}
 
 \end{document}
