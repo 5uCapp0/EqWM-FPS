@@ -1,0 +1,32 @@
+{
+    "levels":  [
+                   {
+                       "clipped_ratio":  2,
+                       "epochs":  10,
+                       "ratio":  3.3390148957182579,
+                       "secs":  407.7
+                   },
+                   {
+                       "clipped_ratio":  1,
+                       "epochs":  30,
+                       "ratio":  0.53182742838737,
+                       "secs":  1200.8
+                   },
+                   {
+                       "clipped_ratio":  1,
+                       "epochs":  50,
+                       "ratio":  0.0359638786395393,
+                       "secs":  1920.4
+                   }
+               ],
+    "epoch_grid":  [
+                       10,
+                       30,
+                       50
+                   ],
+    "_note":  "cloud B=30 grid (PID 48885), OCR-reconstructed key scalars, values exact from terminal",
+    "total_secs":  3528.9,
+    "B":  30,
+    "n_steps":  8000,
+    "n_test":  1000
+}

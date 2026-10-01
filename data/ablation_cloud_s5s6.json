@@ -1,0 +1,30 @@
+{
+    "_note":  "cloud ablation seeds 5+6 (ablation.json 17:56), OCR-reconstructed; std digits ambiguous (OCR), means reliable",
+    "configs":  {
+                    "none_eq":  {
+                                    "robust_mean_over_seeds":  510.7,
+                                    "curve2ep_mean":  588,
+                                    "curve2ep_std":  208,
+                                    "robust_std_over_seeds":  10.7
+                                },
+                    "policy_eq_only":  {
+                                           "robust_mean_over_seeds":  454.7,
+                                           "curve2ep_mean":  380,
+                                           "curve2ep_std":  48,
+                                           "robust_std_over_seeds":  54
+                                       },
+                    "wm_eq_only":  {
+                                       "robust_mean_over_seeds":  500,
+                                       "curve2ep_mean":  476,
+                                       "curve2ep_std":  96,
+                                       "robust_std_over_seeds":  74.67
+                                   },
+                    "both_eq":  {
+                                    "curve2ep_std":  24
+                                }
+                },
+    "seeds":  [
+                  5,
+                  6
+              ]
+}
