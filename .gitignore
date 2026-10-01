@@ -1,0 +1,29 @@
+# 日志
+*.log
+code/logs/
+
+# Python
+__pycache__/
+*.pyc
+
+# 模型权重
+*.pt
+*.pth
+
+# 系统 / 编辑器
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+
+# LaTeX 编译产物
+paper/*.aux
+paper/*.bbl
+paper/*.blg
+paper/*.out
+paper/*.log
+paper/.miktex/
+
+# 内部工作日志（不在公开仓库公开，本地保留）
+项目进度.md
+data/m4_review.md

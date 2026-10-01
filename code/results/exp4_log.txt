@@ -1,0 +1,40 @@
+﻿[theory] collecting data ...
+  [EQ] epoch 1/5 recon=0.1284 reward=1.0112 dyn=0.0004 cons=0.0002 loss=1.1402
+  [STD] epoch 1/5 recon=0.0977 reward=1.0137 dyn=0.0005 loss=1.1119
+  [EQ] epoch 1/5 recon=0.1320 reward=1.0133 dyn=0.0007 cons=0.0002 loss=1.1462
+  [STD] epoch 1/5 recon=0.0974 reward=0.9831 dyn=0.0144 loss=1.0949
+  [EQ] epoch 1/5 recon=0.1146 reward=1.0084 dyn=0.0007 cons=0.0003 loss=1.1239
+  [STD] epoch 1/5 recon=0.1015 reward=0.9783 dyn=0.0009 loss=1.0808
+  [EQ] epoch 1/5 recon=0.0848 reward=1.0212 dyn=0.0189 cons=0.0002 loss=1.1251
+  [STD] epoch 1/5 recon=0.0821 reward=0.9818 dyn=0.0143 loss=1.0782
+  [EQ] epoch 1/5 recon=0.0962 reward=0.9785 dyn=0.0009 cons=0.0003 loss=1.0759
+  [STD] epoch 1/5 recon=0.0974 reward=1.0164 dyn=0.0100 loss=1.1239
+  bootstrap 5/15  (123s)
+  [EQ] epoch 1/5 recon=0.0938 reward=1.0134 dyn=0.0339 cons=0.0003 loss=1.1413
+  [STD] epoch 1/5 recon=0.1145 reward=0.9782 dyn=0.0006 loss=1.0933
+  [EQ] epoch 1/5 recon=0.1124 reward=0.9741 dyn=0.0006 cons=0.0002 loss=1.0873
+  [STD] epoch 1/5 recon=0.0890 reward=1.0099 dyn=0.0010 loss=1.0998
+  [EQ] epoch 1/5 recon=0.1007 reward=1.0157 dyn=0.0018 cons=0.0002 loss=1.1184
+  [STD] epoch 1/5 recon=0.1040 reward=0.9792 dyn=0.0012 loss=1.0844
+  [EQ] epoch 1/5 recon=0.0932 reward=1.0185 dyn=0.0201 cons=0.0002 loss=1.1320
+  [STD] epoch 1/5 recon=0.0976 reward=0.9903 dyn=0.0097 loss=1.0975
+  [EQ] epoch 1/5 recon=0.0975 reward=0.9755 dyn=0.0012 cons=0.0002 loss=1.0744
+  [STD] epoch 1/5 recon=0.1028 reward=1.0121 dyn=0.0023 loss=1.1172
+  bootstrap 10/15  (245s)
+  [EQ] epoch 1/5 recon=0.0912 reward=0.9819 dyn=0.0018 cons=0.0002 loss=1.0751
+  [STD] epoch 1/5 recon=0.0901 reward=1.0435 dyn=0.0006 loss=1.1342
+  [EQ] epoch 1/5 recon=0.0987 reward=1.0065 dyn=0.0044 cons=0.0003 loss=1.1099
+  [STD] epoch 1/5 recon=0.1281 reward=1.0283 dyn=0.0011 loss=1.1575
+  [EQ] epoch 1/5 recon=0.0949 reward=0.9856 dyn=0.0040 cons=0.0001 loss=1.0846
+  [STD] epoch 1/5 recon=0.1099 reward=1.0715 dyn=0.0008 loss=1.1822
+  [EQ] epoch 1/5 recon=0.1090 reward=1.0118 dyn=0.0009 cons=0.0002 loss=1.1219
+  [STD] epoch 1/5 recon=0.1054 reward=0.9771 dyn=0.0030 loss=1.0854
+  [EQ] epoch 1/5 recon=0.0987 reward=1.0083 dyn=0.0055 cons=0.0003 loss=1.1128
+  [STD] epoch 1/5 recon=0.0990 reward=0.9789 dyn=0.0025 loss=1.0804
+  bootstrap 15/15  (366s)
+{
+  "ratio": 0.3921746645758754,
+  "clipped_ratio": 1.0,
+  "group_size": 2
+}
+Saved results/theory_verify.json

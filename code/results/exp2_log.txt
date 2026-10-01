@@ -1,0 +1,86 @@
+﻿
+===== fewshot seed 0 =====
+[imagine] collecting initial random data ...
+  [EQ] epoch 1/30 recon=0.1018 reward=0.9779 dyn=0.0013 cons=0.0001 loss=1.0811
+  [EQ] epoch 10/30 recon=0.0056 reward=0.9728 dyn=0.0023 cons=0.0000 loss=0.9807
+  [EQ] epoch 20/30 recon=0.0046 reward=0.9726 dyn=0.0061 cons=0.0000 loss=0.9832
+  [EQ] epoch 30/30 recon=0.0041 reward=0.9716 dyn=0.0160 cons=0.0000 loss=0.9917
+[imagine] real_steps=0  eval_return=396.00
+  [EQ] epoch 1/5 recon=0.1262 reward=1.0279 dyn=0.0013 cons=0.0008 loss=1.1562
+[imagine] real_steps=11000  eval_return=364.00
+  [EQ] epoch 1/5 recon=0.1481 reward=0.9950 dyn=0.0013 cons=0.0009 loss=1.1453
+[imagine] real_steps=12000  eval_return=460.00
+  [EQ] epoch 1/5 recon=0.1474 reward=1.0068 dyn=0.0009 cons=0.0013 loss=1.1563
+[imagine] real_steps=13000  eval_return=444.00
+  [EQ] epoch 1/5 recon=0.1499 reward=1.0098 dyn=0.0014 cons=0.0010 loss=1.1622
+[imagine] real_steps=14000  eval_return=380.00
+  [EQ] epoch 1/5 recon=0.1290 reward=0.9850 dyn=0.0014 cons=0.0009 loss=1.1163
+[imagine] real_steps=15000  eval_return=316.00
+  eq_imagine done 435s
+[imagine] collecting initial random data ...
+  [STD] epoch 1/30 recon=0.0952 reward=0.9773 dyn=0.0016 loss=1.0741
+  [STD] epoch 10/30 recon=0.0053 reward=0.9727 dyn=0.0033 loss=0.9813
+  [STD] epoch 20/30 recon=0.0055 reward=0.9739 dyn=0.0035 loss=0.9829
+  [STD] epoch 30/30 recon=0.0055 reward=0.9741 dyn=0.0045 loss=0.9841
+[imagine] real_steps=0  eval_return=364.00
+  [STD] epoch 1/5 recon=0.1383 reward=0.9785 dyn=0.0013 loss=1.1181
+[imagine] real_steps=11000  eval_return=332.00
+  [STD] epoch 1/5 recon=0.1528 reward=0.9870 dyn=0.0014 loss=1.1412
+[imagine] real_steps=12000  eval_return=332.00
+  [STD] epoch 1/5 recon=0.1512 reward=1.0336 dyn=0.0012 loss=1.1861
+[imagine] real_steps=13000  eval_return=476.00
+  [STD] epoch 1/5 recon=0.1535 reward=1.0207 dyn=0.0013 loss=1.1755
+[imagine] real_steps=14000  eval_return=764.00
+  [STD] epoch 1/5 recon=0.1261 reward=1.0316 dyn=0.0012 loss=1.1589
+[imagine] real_steps=15000  eval_return=508.00
+  std_imagine done 316s
+[real-ppo] real_steps=20000  eval_return=476.00
+[real-ppo] real_steps=40000  eval_return=572.00
+[real-ppo] real_steps=60000  eval_return=316.00
+[real-ppo] real_steps=80000  eval_return=412.00
+[real-ppo] real_steps=100000  eval_return=460.00
+  real_ppo done 1982s
+
+===== fewshot seed 1 =====
+[imagine] collecting initial random data ...
+  [EQ] epoch 1/30 recon=0.0799 reward=0.9814 dyn=0.0068 cons=0.0001 loss=1.0682
+  [EQ] epoch 10/30 recon=0.0057 reward=0.9726 dyn=0.0068 cons=0.0000 loss=0.9851
+  [EQ] epoch 20/30 recon=0.0044 reward=0.9720 dyn=0.0083 cons=0.0000 loss=0.9847
+  [EQ] epoch 30/30 recon=0.0043 reward=0.9723 dyn=0.0208 cons=0.0000 loss=0.9973
+[imagine] real_steps=0  eval_return=380.00
+  [EQ] epoch 1/5 recon=0.1314 reward=1.0204 dyn=0.0011 cons=0.0011 loss=1.1540
+[imagine] real_steps=11000  eval_return=412.00
+  [EQ] epoch 1/5 recon=0.1366 reward=0.9780 dyn=0.0009 cons=0.0010 loss=1.1165
+[imagine] real_steps=12000  eval_return=460.00
+  [EQ] epoch 1/5 recon=0.1298 reward=0.9790 dyn=0.0008 cons=0.0006 loss=1.1102
+[imagine] real_steps=13000  eval_return=380.00
+  [EQ] epoch 1/5 recon=0.1286 reward=1.0176 dyn=0.0015 cons=0.0007 loss=1.1484
+[imagine] real_steps=14000  eval_return=348.00
+  [EQ] epoch 1/5 recon=0.1196 reward=0.9911 dyn=0.0010 cons=0.0005 loss=1.1123
+[imagine] real_steps=15000  eval_return=364.00
+  eq_imagine done 599s
+[imagine] collecting initial random data ...
+  [STD] epoch 1/30 recon=0.0780 reward=0.9816 dyn=0.0072 loss=1.0668
+  [STD] epoch 10/30 recon=0.0052 reward=0.9725 dyn=0.0070 loss=0.9847
+  [STD] epoch 20/30 recon=0.0054 reward=0.9743 dyn=0.0028 loss=0.9825
+  [STD] epoch 30/30 recon=0.0047 reward=0.9747 dyn=0.0034 loss=0.9827
+[imagine] real_steps=0  eval_return=668.00
+  [STD] epoch 1/5 recon=0.1388 reward=1.0277 dyn=0.0009 loss=1.1674
+[imagine] real_steps=11000  eval_return=508.00
+  [STD] epoch 1/5 recon=0.1466 reward=0.9936 dyn=0.0011 loss=1.1413
+[imagine] real_steps=12000  eval_return=700.00
+  [STD] epoch 1/5 recon=0.1499 reward=1.0248 dyn=0.0009 loss=1.1757
+[imagine] real_steps=13000  eval_return=428.00
+  [STD] epoch 1/5 recon=0.1422 reward=1.0210 dyn=0.0009 loss=1.1641
+[imagine] real_steps=14000  eval_return=492.00
+  [STD] epoch 1/5 recon=0.1545 reward=0.9857 dyn=0.0010 loss=1.1412
+[imagine] real_steps=15000  eval_return=428.00
+  std_imagine done 316s
+[real-ppo] real_steps=20000  eval_return=364.00
+[real-ppo] real_steps=40000  eval_return=284.00
+[real-ppo] real_steps=60000  eval_return=380.00
+[real-ppo] real_steps=80000  eval_return=332.00
+[real-ppo] real_steps=100000  eval_return=332.00
+  real_ppo done 1932s
+Saved results/fewshot.json
+plot failed: '-o-' is not a valid format string (two linestyle symbols)

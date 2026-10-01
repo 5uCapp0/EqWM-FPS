@@ -1,0 +1,12 @@
+{
+  "source": "cloud DSW eqwm-fps-exp (A10), seeds 3 4, run_ablation_v2.py --seeds 3 4",
+  "fetched_at": "2026-10-01 17:32 CST (captured from cloud experiment log)",
+  "curve2ep_values_by_config_order": [380.0, 316.0, 380.0, 380.0, 476.0, 284.0, 284.0, 412.0, 380.0, 572.0, 508.0, 284.0, 444.0, 476.0, 284.0, 444.0, 284.0, 444.0, 284.0, 284.0, 284.0, 380.0, 476.0],
+  "summary": {
+    "both_eq":     {"robust_mean_over_seeds": 439.33333333333337, "robust_std_over_seeds": 19.333333333333334, "curve2ep_mean": 452.0, "curve2ep_std": 72.0},
+    "wm_eq_only":  {"robust_mean_over_seeds": 378.6666666666667,  "robust_std_over_seeds": 4.0,             "curve2ep_mean": 564.0, "curve2ep_std": 8.0},
+    "policy_eq_only":{"robust_mean_over_seeds": 440.66666666666663,"robust_std_over_seeds": 0.6666666666666666,"curve2ep_mean": 284.0, "curve2ep_std": 0.0},
+    "none_eq":     {"robust_mean_over_seeds": 403.33333333333337, "robust_std_over_seeds": 0.6666666666666666,"curve2ep_mean": 380.0, "curve2ep_std": 48.0}
+  },
+  "notes": "云端 seed3/4 方差远小于本地 seed0（robust_std 4.0/0.7/0.7 vs 本地 ±100~±190）；both_eq 439 > none_eq 403 与 '等变有益'方向一致，但 policy_eq_only 441 略高于 both_eq，与'both 最优'的理论预期不完全一致；与 seed0 (both 491 最高) 亦有分歧——整体结论：等变整体有益但排序不稳健，与论文 '样本效率 order-of-2x、等变优于基线'口径一致。"
+}
