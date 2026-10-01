@@ -223,8 +223,15 @@ $R(\rho)\le R_S(\rho)+\sqrt{(\mathrm{KL}(\rho\|\pi)+\log(2\sqrt n/\delta))/(2n)}
 %% ===================== 4. METHOD =====================
 \section{Method}\label{sec:method}
 
+\begin{figure*}[t]
+  \includegraphics[width=0.95\textwidth]{eqwm_fig1.pdf}
+  \caption{Overview of the equivariant world model and imagination training. The world model enforces hard $\mathbb Z_2$ equivariance by group averaging across an Encoder, a ConvGRU dynamics cell, a Decoder, and a reward head; it predicts both frame reconstruction and a scalar reward. The equivariant PPO policy is updated inside the learned model on imagination rollouts, and the analysis bounds the optimal real:imagination ratio $m^*/n$ only qualitatively.}
+  \label{fig:overview}
+\end{figure*}
+
+
 \subsection{Equivariant $\mathbb Z_2$ world model}
-The world model $\hat M_\phi$ has four parts.
+The world model $\hat M_\phi$ has four parts (Figure~\ref{fig:overview}).
 \emph{Encoder} $E_\phi$: three strided convolutions map a
 $64\times64\times3$ frame to an $8\times8\times z$ latent map
 ($z=32$, base channels $16$). Every convolution is a group-averaging layer
@@ -270,7 +277,8 @@ rather than tuned. Table~\ref{tab:hyper} lists all hyper-parameters.
 except for group averaging). Exp.\,1 trained the world model for 50 epochs;
 the imagination runs below use 30 initial epochs.}
 \label{tab:hyper}
-\begin{tabular}{lll}
+\footnotesize\setlength{\tabcolsep}{3pt}
+\begin{tabular}{@{}lll@{}}
 \toprule
 Group & Hyper-parameter & Value \\
 \midrule
@@ -413,9 +421,10 @@ with a well-defined per-frame estimate are reported; the earlier
 concatenated-rollout open-loop MSE was computed with a flawed metric and is
 omitted (see text).}
 \label{tab:wm}
-\begin{tabular}{lccc}
+\small\setlength{\tabcolsep}{4pt}
+\begin{tabular}{@{}lccc@{}}
 \toprule
-Metric & Equivariant WM & Standard WM & Note \\
+Metric & Equiv. WM & Std. WM & Note \\
 \midrule
 PSNR (dB)            & $20.62\pm1.59$ & $21.78\pm0.66$ & standard slightly better \\
 SSIM                 & $0.272\pm0.069$ & $0.321\pm0.026$ & standard slightly better \\
@@ -492,7 +501,8 @@ returns are in Table~\ref{tab:ablation} and Fig.~\ref{fig:ablation}.
 \caption{Ablation: where equivariance is placed (3 train seeds; robust
 evaluation). All four means overlap within one standard deviation.}
 \label{tab:ablation}
-\begin{tabular}{lcc}
+\small\setlength{\tabcolsep}{4pt}
+\begin{tabular}{@{}p{0.64\columnwidth}c@{}}
 \toprule
 Configuration & Final return (robust) \\
 \midrule
