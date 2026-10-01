@@ -1,85 +1,15 @@
 {
   "generated": "2026-10-02 (analyze_v3_pooled.py)",
   "ablation": {
-    "primary_local5": {
+    "primary_local7": {
       "both_eq": {
         "label": "both_eq",
-        "n": 5,
-        "mean": 520.3,
-        "std": 111.7,
-        "ci95_lo": 381.5,
-        "ci95_hi": 659.0,
-        "min": 398.7,
-        "max": 682.7,
-        "per_unit": [
-          490.7,
-          398.7,
-          452.0,
-          577.3,
-          682.7
-        ]
-      },
-      "wm_eq_only": {
-        "label": "wm_eq_only",
-        "n": 5,
-        "mean": 430.4,
-        "std": 30.5,
-        "ci95_lo": 392.5,
-        "ci95_hi": 468.2,
-        "min": 401.3,
-        "max": 465.3,
-        "per_unit": [
-          401.3,
-          409.3,
-          465.3,
-          461.3,
-          414.7
-        ]
-      },
-      "policy_eq_only": {
-        "label": "policy_eq_only",
-        "n": 5,
-        "mean": 421.4,
-        "std": 25.4,
-        "ci95_lo": 389.8,
-        "ci95_hi": 452.9,
-        "min": 390.7,
-        "max": 454.7,
-        "per_unit": [
-          454.7,
-          390.7,
-          434.7,
-          402.7,
-          424.0
-        ]
-      },
-      "none_eq": {
-        "label": "none_eq",
-        "n": 5,
-        "mean": 429.1,
-        "std": 49.5,
-        "ci95_lo": 367.6,
-        "ci95_hi": 490.6,
-        "min": 392.0,
-        "max": 513.3,
-        "per_unit": [
-          402.7,
-          513.3,
-          433.3,
-          392.0,
-          404.0
-        ]
-      }
-    },
-    "pooled_6units": {
-      "both_eq": {
-        "label": "both_eq",
-        "n": 6,
-        "mean": 506.8,
-        "std": 105.3,
-        "ci95_lo": 396.3,
-        "ci95_hi": 617.3,
-        "min": 398.7,
+        "n": 7,
+        "mean": 483.8,
+        "std": 110.8,
+        "ci95_lo": 381.3,
+        "ci95_hi": 586.3,
+        "min": 377.3,
         "max": 682.7,
         "per_unit": [
           490.7,
@@ -87,52 +17,55 @@
           452.0,
           577.3,
           682.7,
-          439.3
+          377.3,
+          408.0
         ]
       },
       "wm_eq_only": {
         "label": "wm_eq_only",
-        "n": 6,
-        "mean": 421.8,
-        "std": 34.5,
-        "ci95_lo": 385.6,
-        "ci95_hi": 457.9,
-        "min": 378.7,
-        "max": 465.3,
+        "n": 7,
+        "mean": 457.7,
+        "std": 61.0,
+        "ci95_lo": 401.3,
+        "ci95_hi": 514.1,
+        "min": 401.3,
+        "max": 578.7,
         "per_unit": [
           401.3,
           409.3,
           465.3,
           461.3,
           414.7,
-          378.7
+          473.3,
+          578.7
         ]
       },
       "policy_eq_only": {
         "label": "policy_eq_only",
-        "n": 6,
-        "mean": 424.6,
-        "std": 24.1,
-        "ci95_lo": 399.3,
-        "ci95_hi": 449.8,
+        "n": 7,
+        "mean": 433.1,
+        "std": 30.3,
+        "ci95_lo": 405.1,
+        "ci95_hi": 461.1,
         "min": 390.7,
-        "max": 454.7,
+        "max": 478.3,
         "per_unit": [
           454.7,
           390.7,
           434.7,
           402.7,
           424.0,
-          440.7
+          478.3,
+          446.7
         ]
       },
       "none_eq": {
         "label": "none_eq",
-        "n": 6,
-        "mean": 424.8,
-        "std": 45.5,
-        "ci95_lo": 377.0,
-        "ci95_hi": 472.5,
+        "n": 7,
+        "mean": 436.6,
+        "std": 42.8,
+        "ci95_lo": 397.0,
+        "ci95_hi": 476.2,
         "min": 392.0,
         "max": 513.3,
         "per_unit": [
@@ -141,194 +74,329 @@
           433.3,
           392.0,
           404.0,
-          403.3
+          465.3,
+          445.3
         ]
       }
     },
-    "paired_local5": {
+    "paired_local7": {
       "both_eq - none_eq": {
         "label": "both_eq - none_eq",
-        "n": 5,
-        "mean_diff": 91.2,
-        "sd_diff": 151.3,
-        "cohens_d": 0.6,
-        "t": 1.348,
-        "p_twosided_t": 0.249,
-        "wilcoxon_p": 0.3125,
-        "per_unit_diff": [
-          88.0,
-          -114.6,
-          18.7,
-          185.3,
-          278.7
-        ]
-      },
-      "wm_eq_only - none_eq": {
-        "label": "wm_eq_only - none_eq",
-        "n": 5,
-        "mean_diff": 1.3,
-        "sd_diff": 64.7,
-        "cohens_d": 0.02,
-        "t": 0.046,
-        "p_twosided_t": 0.9658,
-        "wilcoxon_p": 0.8125,
-        "per_unit_diff": [
-          -1.4,
-          -104.0,
-          32.0,
-          69.3,
-          10.7
-        ]
-      },
-      "policy_eq_only - none_eq": {
-        "label": "policy_eq_only - none_eq",
-        "n": 5,
-        "mean_diff": -7.7,
-        "sd_diff": 67.0,
-        "cohens_d": -0.12,
-        "t": -0.257,
-        "p_twosided_t": 0.8097,
-        "wilcoxon_p": 0.625,
-        "per_unit_diff": [
-          52.0,
-          -122.6,
-          1.4,
-          10.7,
-          20.0
-        ]
-      },
-      "both_eq - wm_eq_only": {
-        "label": "both_eq - wm_eq_only",
-        "n": 5,
-        "mean_diff": 89.9,
-        "sd_diff": 115.3,
-        "cohens_d": 0.78,
-        "t": 1.744,
-        "p_twosided_t": 0.1561,
-        "wilcoxon_p": 0.3125,
-        "per_unit_diff": [
-          89.4,
-          -10.6,
-          -13.3,
-          116.0,
-          268.0
-        ]
-      },
-      "both_eq - policy_eq_only": {
-        "label": "both_eq - policy_eq_only",
-        "n": 5,
-        "mean_diff": 98.9,
-        "sd_diff": 112.0,
-        "cohens_d": 0.88,
-        "t": 1.976,
-        "p_twosided_t": 0.1194,
-        "wilcoxon_p": 0.0625,
-        "per_unit_diff": [
-          36.0,
-          8.0,
-          17.3,
-          174.7,
-          258.7
-        ]
-      }
-    },
-    "paired_pooled6": {
-      "both_eq - none_eq": {
-        "label": "both_eq - none_eq",
-        "n": 6,
-        "mean_diff": 82.0,
-        "sd_diff": 137.2,
-        "cohens_d": 0.6,
-        "t": 1.464,
-        "p_twosided_t": 0.2031,
-        "wilcoxon_p": 0.2188,
+        "n": 7,
+        "mean_diff": 47.3,
+        "sd_diff": 145.3,
+        "cohens_d": 0.33,
+        "t": 0.86,
+        "p_twosided_t": 0.4227,
+        "wilcoxon_p": 0.6875,
         "per_unit_diff": [
           88.0,
           -114.6,
           18.7,
           185.3,
           278.7,
-          36.0
+          -88.0,
+          -37.3
         ]
       },
       "wm_eq_only - none_eq": {
         "label": "wm_eq_only - none_eq",
-        "n": 6,
-        "mean_diff": -3.0,
-        "sd_diff": 58.9,
-        "cohens_d": -0.05,
-        "t": -0.125,
-        "p_twosided_t": 0.9051,
-        "wilcoxon_p": 1.0,
+        "n": 7,
+        "mean_diff": 21.1,
+        "sd_diff": 72.4,
+        "cohens_d": 0.29,
+        "t": 0.772,
+        "p_twosided_t": 0.4694,
+        "wilcoxon_p": 0.2969,
         "per_unit_diff": [
           -1.4,
           -104.0,
           32.0,
           69.3,
           10.7,
-          -24.7
+          8.0,
+          133.3
         ]
       },
       "policy_eq_only - none_eq": {
         "label": "policy_eq_only - none_eq",
-        "n": 6,
-        "mean_diff": -0.2,
-        "sd_diff": 62.7,
-        "cohens_d": -0.0,
-        "t": -0.008,
-        "p_twosided_t": 0.9941,
-        "wilcoxon_p": 0.4375,
+        "n": 7,
+        "mean_diff": -3.5,
+        "sd_diff": 55.3,
+        "cohens_d": -0.06,
+        "t": -0.165,
+        "p_twosided_t": 0.874,
+        "wilcoxon_p": 0.2969,
         "per_unit_diff": [
           52.0,
           -122.6,
           1.4,
           10.7,
           20.0,
-          37.3
+          13.0,
+          1.3
         ]
       },
       "both_eq - wm_eq_only": {
         "label": "both_eq - wm_eq_only",
-        "n": 6,
-        "mean_diff": 85.0,
-        "sd_diff": 103.8,
-        "cohens_d": 0.82,
-        "t": 2.007,
-        "p_twosided_t": 0.1011,
-        "wilcoxon_p": 0.1562,
+        "n": 7,
+        "mean_diff": 26.1,
+        "sd_diff": 145.6,
+        "cohens_d": 0.18,
+        "t": 0.475,
+        "p_twosided_t": 0.6518,
+        "wilcoxon_p": 0.9375,
         "per_unit_diff": [
           89.4,
           -10.6,
           -13.3,
           116.0,
           268.0,
-          60.7
+          -96.0,
+          -170.7
         ]
       },
       "both_eq - policy_eq_only": {
         "label": "both_eq - policy_eq_only",
-        "n": 6,
-        "mean_diff": 82.2,
-        "sd_diff": 108.2,
-        "cohens_d": 0.76,
-        "t": 1.862,
-        "p_twosided_t": 0.1217,
-        "wilcoxon_p": 0.0625,
+        "n": 7,
+        "mean_diff": 50.7,
+        "sd_diff": 124.3,
+        "cohens_d": 0.41,
+        "t": 1.079,
+        "p_twosided_t": 0.3221,
+        "wilcoxon_p": 0.4688,
         "per_unit_diff": [
           36.0,
           8.0,
           17.3,
           174.7,
           258.7,
-          -1.3
+          -101.0,
+          -38.7
         ]
       }
     },
+    "_previous_local5_archive": {
+      "primary_local5": {
+        "both_eq": {
+          "label": "both_eq",
+          "n": 5,
+          "mean": 520.3,
+          "std": 111.7,
+          "ci95_lo": 381.5,
+          "ci95_hi": 659.0,
+          "min": 398.7,
+          "max": 682.7,
+          "per_unit": [
+            490.7,
+            398.7,
+            452.0,
+            577.3,
+            682.7
+          ]
+        },
+        "wm_eq_only": {
+          "label": "wm_eq_only",
+          "n": 5,
+          "mean": 430.4,
+          "std": 30.5,
+          "ci95_lo": 392.5,
+          "ci95_hi": 468.2,
+          "min": 401.3,
+          "max": 465.3,
+          "per_unit": [
+            401.3,
+            409.3,
+            465.3,
+            461.3,
+            414.7
+          ]
+        },
+        "policy_eq_only": {
+          "label": "policy_eq_only",
+          "n": 5,
+          "mean": 421.4,
+          "std": 25.4,
+          "ci95_lo": 389.8,
+          "ci95_hi": 452.9,
+          "min": 390.7,
+          "max": 454.7,
+          "per_unit": [
+            454.7,
+            390.7,
+            434.7,
+            402.7,
+            424.0
+          ]
+        },
+        "none_eq": {
+          "label": "none_eq",
+          "n": 5,
+          "mean": 429.1,
+          "std": 49.5,
+          "ci95_lo": 367.6,
+          "ci95_hi": 490.6,
+          "min": 392.0,
+          "max": 513.3,
+          "per_unit": [
+            402.7,
+            513.3,
+            433.3,
+            392.0,
+            404.0
+          ]
+        }
+      },
+      "paired_local5": {
+        "both_eq - none_eq": {
+          "label": "both_eq - none_eq",
+          "n": 5,
+          "mean_diff": 91.2,
+          "sd_diff": 151.3,
+          "cohens_d": 0.6,
+          "t": 1.348,
+          "p_twosided_t": 0.249,
+          "wilcoxon_p": 0.3125,
+          "per_unit_diff": [
+            88.0,
+            -114.6,
+            18.7,
+            185.3,
+            278.7
+          ]
+        },
+        "wm_eq_only - none_eq": {
+          "label": "wm_eq_only - none_eq",
+          "n": 5,
+          "mean_diff": 1.3,
+          "sd_diff": 64.7,
+          "cohens_d": 0.02,
+          "t": 0.046,
+          "p_twosided_t": 0.9658,
+          "wilcoxon_p": 0.8125,
+          "per_unit_diff": [
+            -1.4,
+            -104.0,
+            32.0,
+            69.3,
+            10.7
+          ]
+        },
+        "policy_eq_only - none_eq": {
+          "label": "policy_eq_only - none_eq",
+          "n": 5,
+          "mean_diff": -7.7,
+          "sd_diff": 67.0,
+          "cohens_d": -0.12,
+          "t": -0.257,
+          "p_twosided_t": 0.8097,
+          "wilcoxon_p": 0.625,
+          "per_unit_diff": [
+            52.0,
+            -122.6,
+            1.4,
+            10.7,
+            20.0
+          ]
+        },
+        "both_eq - wm_eq_only": {
+          "label": "both_eq - wm_eq_only",
+          "n": 5,
+          "mean_diff": 89.9,
+          "sd_diff": 115.3,
+          "cohens_d": 0.78,
+          "t": 1.744,
+          "p_twosided_t": 0.1561,
+          "wilcoxon_p": 0.3125,
+          "per_unit_diff": [
+            89.4,
+            -10.6,
+            -13.3,
+            116.0,
+            268.0
+          ]
+        },
+        "both_eq - policy_eq_only": {
+          "label": "both_eq - policy_eq_only",
+          "n": 5,
+          "mean_diff": 98.9,
+          "sd_diff": 112.0,
+          "cohens_d": 0.88,
+          "t": 1.976,
+          "p_twosided_t": 0.1194,
+          "wilcoxon_p": 0.0625,
+          "per_unit_diff": [
+            36.0,
+            8.0,
+            17.3,
+            174.7,
+            258.7
+          ]
+        }
+      }
+    },
+    "cloud_crosscheck": {
+      "units": {
+        "pair_34_A10": {
+          "both_eq": 439.3,
+          "wm_eq_only": 378.7,
+          "policy_eq_only": 440.7,
+          "none_eq": 403.3,
+          "note": "A10 两合并并为1单位(无逐种子)"
+        },
+        "seed9_youyun": {
+          "both_eq": 385.3,
+          "wm_eq_only": 416.0,
+          "policy_eq_only": 422.7,
+          "none_eq": 424.0
+        },
+        "seed10_youyun": {
+          "both_eq": 457.3,
+          "wm_eq_only": 460.0,
+          "policy_eq_only": 490.3,
+          "none_eq": 501.3
+        },
+        "seed11_youyun": {
+          "both_eq": 482.7,
+          "wm_eq_only": 430.7,
+          "policy_eq_only": 472.0,
+          "none_eq": 456.0
+        },
+        "seed12_youyun": {
+          "both_eq": 401.3,
+          "wm_eq_only": 418.7,
+          "policy_eq_only": 428.0,
+          "none_eq": 385.3
+        },
+        "seed15_youyun": {
+          "both_eq": 428.0,
+          "wm_eq_only": 418.7,
+          "policy_eq_only": 436.0,
+          "none_eq": 510.7,
+          "note": "优云并行 s15/16，与本机 s15/16 独立样本"
+        },
+        "seed16_youyun": {
+          "both_eq": 429.3,
+          "wm_eq_only": 350.7,
+          "policy_eq_only": 394.7,
+          "none_eq": 420.0,
+          "note": "优云并行 s15/16，与本机 s15/16 独立样本"
+        }
+      },
+      "both_minus_none": {
+        "pair_34_A10": 36.0,
+        "seed9_youyun": -38.7,
+        "seed10_youyun": -44.0,
+        "seed11_youyun": 26.7,
+        "seed12_youyun": 16.0,
+        "seed15_youyun": -82.7,
+        "seed16_youyun": 9.3
+      }
+    },
     "_provenance": {
-      "local_seeds_012": "code/logs/ablation_run.log 逐种子 robust 行",
-      "local_seeds_1314": "data/ablation.json robust_mean（seeds 13,14，文件 21:14 覆盖后版本）",
-      "cloud_pair_34": "data/ablation_cloud_s3s4.json summary（两种子合并，无逐种子明细）",
-      "note": "primary_local5 = 同机（本机 RTX3060）5 种子；pooled_6units 加入云端种子对作为次级披露（跨机器异质性）。"
+      "primary_local7": "本机 RTX3060 7 种子 0,1,2,13,14,15,16；15/16 来自 data/ablation_s15.json / ablation_s16.json 及 code/logs robust 行",
+      "cloud_crosscheck": "云盘异质性披露，不进主表；s9-s12 来自 data/cloud_pulls/ablation_s{9,10,11,12}_youyun_cloud.json；3/4=A10合并对；优云 s15/s16=ablation_s15s16_youyun_cloud.json（与本机15/16并行独立样本）",
+      "note": "v4 扩展：主表由 5→7 本机种子；云盘仅 cross-check。"
     }
   },
   "reward_head": {

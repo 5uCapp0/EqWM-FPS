@@ -65,7 +65,7 @@ steps, an order-of-$2\times$ sample-efficiency gain that we mark as
 preliminary, with a measured step ratio of $1.3$--$2.7\times$ and flat noisy
 curves. Under this small-model budget, equivariant and non-equivariant
 imagination variants are not distinguishable, and a four-cell ablation pooled
-over five same-machine seeds finds no significant return gain, with the fully
+over seven same-machine seeds finds no significant return gain, with the fully
 equivariant configuration numerically highest but far from significance. A
 bootstrap estimate of the effective-sample multiplier is non-monotone and
 cross-machine inconsistent. The theory is presented as upper bounds and an
@@ -132,7 +132,7 @@ antisymmetric left/right action head. Our contributions are:
         near-degenerate predictor rather than evidence of reward
         understanding; imagination training gives an order-of-$2\times$
         sample-efficiency gain over pure PPO that is preliminary; a four-cell
-        ablation pooled over five same-machine seeds shows no significant
+        ablation pooled over seven same-machine seeds shows no significant
         return gain from any equivariant component; and the bootstrap estimate
         of the effective-sample multiplier is not robust. We treat the weak
         and negative results as limitations and open problems rather than
@@ -531,15 +531,15 @@ curves are noisy at this budget.}
 \subsection{Experiment 3: ablation of the equivariant components}
 We ablate whether equivariance is placed in the world model, the policy,
 both, or neither, under the same small budget and a robust evaluation (3 eval
-seeds $\times$ 8 episodes per training seed). We pool \emph{five training
-seeds run on the same local machine} (seeds $0,1,2,13,14$); two additional
-cloud seeds (A10 GPU, pooled as a single unit because the per-seed breakdown
-was not retained) are reported as a secondary cross-check. Final robust
+seeds $\times$ 8 episodes per training seed). We pool \emph{seven training
+seeds run on the same local machine} (seeds $0,1,2,13,14,15,16$); additional
+cloud seeds (A10 and RTX4090 GPUs, pooled as cross-check units) are reported as
+a secondary cross-check. Final robust
 returns are in Table~\ref{tab:ablation} and Fig.~\ref{fig:ablation}.
 
 \begin{table}[t]
 \centering
-\caption{Ablation: where equivariance is placed (5 local train seeds; robust
+\caption{Ablation: where equivariance is placed (7 local train seeds; robust
 evaluation; mean$\pm$std with $95\%$ CI). No configuration is significantly
 better than the others; the fully equivariant configuration is numerically
 highest, driven by two high-variance seeds.}
@@ -549,10 +549,10 @@ highest, driven by two high-variance seeds.}
 \toprule
 Configuration & Final return (robust) & 95\% CI & Paired vs none-eq \\
 \midrule
-both-eq (WM + policy equivariant) & $520.3\pm111.7$ & $[381.5,659.0]$ & $+91.2$ ($d{=}0.60$, $p{=}0.25$) \\
-wm-eq-only (WM equivariant, policy standard) & $430.4\pm30.5$ & $[392.5,468.2]$ & $+1.3$ ($d{=}0.02$, $p{=}0.97$) \\
-policy-eq-only (WM standard, policy equivariant) & $421.4\pm25.4$ & $[389.8,452.9]$ & $-7.7$ ($d{=}{-}0.12$, $p{=}0.81$) \\
-none-eq (both standard) & $429.1\pm49.5$ & $[367.6,490.6]$ & --- \\
+both-eq (WM + policy equivariant) & $483.8\pm110.8$ & $[381.3,586.3]$ & $+47.3$ ($d{=}0.33$, $p{=}0.42$) \\
+wm-eq-only (WM equivariant, policy standard) & $457.7\pm61.0$ & $[401.3,514.1]$ & $+21.1$ ($d{=}0.29$, $p{=}0.47$) \\
+policy-eq-only (WM standard, policy equivariant) & $433.1\pm30.3$ & $[405.1,461.1]$ & $-3.5$ ($d{=}{-}0.06$, $p{=}0.87$) \\
+none-eq (both standard) & $436.6\pm42.8$ & $[397.0,476.2]$ & --- \\
 \bottomrule
 \end{tabular}
 \end{table}
@@ -560,23 +560,25 @@ none-eq (both standard) & $429.1\pm49.5$ & $[367.6,490.6]$ & --- \\
 \begin{figure}[t]
 \centering
 \includegraphics[width=0.78\linewidth]{fig_ablation.pdf}
-\caption{Ablation of equivariant components pooled over five local train
+\caption{Ablation of equivariant components pooled over seven local train
 seeds. Error bars are $95\%$ confidence intervals; dots are individual local
-seeds; the open diamond is the pooled two-seed cloud cross-check. No
+seeds; the open diamond is the pooled two-seed A10 cloud cross-check. No
 configuration is significantly better: the paired both-eq vs none-eq
-difference is $+91$ with $p=0.25$.}
+difference is $+47$ with $p=0.42$.}
 \label{fig:ablation}
 \end{figure}
 
 Pooling changes the earlier three-seed picture in an important way: the fully
-equivariant configuration is now \emph{numerically highest} ($520.3$ vs
-$429.1$ for none-eq), with a paired difference of $+91.2$ over five
-same-machine seeds (Cohen's $d=0.60$, paired $t=1.35$, $p=0.25$; Wilcoxon
-$p=0.31$). This is far from significance, the difference is driven by two
+equivariant configuration is now \emph{numerically highest} ($483.8$ vs
+$436.6$ for none-eq), with a paired difference of $+47.3$ over seven
+same-machine seeds (Cohen's $d=0.33$, paired $t=0.86$, $p=0.42$; Wilcoxon
+$p=0.69$). This is far from significance, the difference is driven by two
 high-variance seeds (13 and 14, returns $577$ and $683$) that also produce
-the widest confidence interval, and the cloud pair agrees only in direction
-($439$ vs $403$). The two other equivariant components show no signal
-(wm-eq-only: $+1.3$, $p=0.97$; policy-eq-only: $-7.7$, $p=0.81$). We
+the widest confidence interval; adding two further seeds (15 and 16, both
+returns $377$ and $408$) dilutes the gap toward the other components, and the
+broader cloud cross-check is directionally inconsistent across GPUs. The two
+other equivariant components show no signal
+(wm-eq-only: $+21.1$, $p=0.47$; policy-eq-only: $-3.5$, $p=0.87$). We
 therefore report honestly that \emph{no equivariant component produces a
 significant return gain} at this budget, while noting that the pooled point
 estimate no longer favors the non-equivariant configuration; within-seed
@@ -606,7 +608,7 @@ Across the four experiments, the supported statements are:
 property of a near-degenerate predictor per the constant-baseline analysis;
 (ii)~imagination training gives an order-of-$2\times$ sample-efficiency
 gain over pure PPO that is preliminary (measured ratio $\sim$1.3--2.7$\times$,
-two seeds, flat noisy curves); (iii)~pooling five seeds, no equivariant
+two seeds, flat noisy curves); (iii)~pooling seven seeds, no equivariant
 component produces a significant return gain, and the point estimate now
 favors the fully equivariant configuration without significance; and
 (iv)~the bootstrap evidence for an effective-sample multiplier is not robust.
@@ -623,7 +625,7 @@ is modest: equivariance's clearest benefit is seed-to-seed stability of the
 task-relevant reward head, which a constant-predictor analysis reframes as
 stability of a near-degenerate predictor; imagination training improves
 sample efficiency by an order of $2\times$ (preliminary; measured ratio
-$\sim$1.3--2.7$\times$); pooled over five seeds the equivariant components do
+$\sim$1.3--2.7$\times$); pooled over seven seeds the equivariant components do
 not yield a significant return gain, with the fully equivariant configuration
 numerically highest but far from significance; and the effective-sample
 multiplier is not yet a robust measured quantity.
