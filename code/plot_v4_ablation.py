@@ -20,7 +20,7 @@ plt.rcParams.update({"font.size":9,"axes.titlesize":10,"axes.labelsize":9,
 CONFIGS=["both_eq","wm_eq_only","policy_eq_only","none_eq"]
 CLABELS=["both-eq\n(WM+policy)","wm-eq-only","policy-eq-only","none-eq"]
 COLORS=["#2a9d8f","#457b9d","#e9a23b","#e76f51"]
-loc=S["ablation"]["primary_local7"]
+loc=S["ablation"]["primary_local9"]
 N=len(loc["both_eq"]["per_unit"])
 # 云盘 cross-check 中心（A10 合并对，作为参考菱形）
 cloud={"both_eq":439.333,"wm_eq_only":378.667,"policy_eq_only":440.667,"none_eq":403.333}
@@ -38,7 +38,7 @@ ax.set_xticks(x); ax.set_xticklabels(CLABELS)
 ax.set_ylabel("Robust episode return"); ax.set_ylim(300,760)
 ax.set_title(f"Ablation of equivariant components (pooled over {N} local train seeds; "
              "open diamond = A10 cloud pair, pooled)",fontsize=9)
-ax.annotate("vs none p=0.42",xy=(x[0],560),xytext=(-0.55,0.78),xycoords="data",
+ax.annotate("vs none p=0.41",xy=(x[0],560),xytext=(-0.55,0.78),xycoords="data",
             textcoords="axes fraction",fontsize=8,color="#333333",
             arrowprops=dict(arrowstyle="-",lw=0.8,color="#999999"))
 ax.legend(loc="lower left",frameon=True,fontsize=7.5)

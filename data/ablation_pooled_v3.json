@@ -1,14 +1,14 @@
 {
   "generated": "2026-10-02 (analyze_v3_pooled.py)",
   "ablation": {
-    "primary_local7": {
+    "primary_local9": {
       "both_eq": {
         "label": "both_eq",
-        "n": 7,
-        "mean": 483.8,
-        "std": 110.8,
-        "ci95_lo": 381.3,
-        "ci95_hi": 586.3,
+        "n": 9,
+        "mean": 473.9,
+        "std": 100.8,
+        "ci95_lo": 396.5,
+        "ci95_hi": 551.4,
         "min": 377.3,
         "max": 682.7,
         "per_unit": [
@@ -18,16 +18,18 @@
           577.3,
           682.7,
           377.3,
-          408.0
+          408.0,
+          392.0,
+          486.7
         ]
       },
       "wm_eq_only": {
         "label": "wm_eq_only",
-        "n": 7,
-        "mean": 457.7,
-        "std": 61.0,
-        "ci95_lo": 401.3,
-        "ci95_hi": 514.1,
+        "n": 9,
+        "mean": 450.2,
+        "std": 54.9,
+        "ci95_lo": 408.0,
+        "ci95_hi": 492.4,
         "min": 401.3,
         "max": 578.7,
         "per_unit": [
@@ -37,16 +39,18 @@
           461.3,
           414.7,
           473.3,
-          578.7
+          578.7,
+          420.0,
+          428.0
         ]
       },
       "policy_eq_only": {
         "label": "policy_eq_only",
-        "n": 7,
-        "mean": 433.1,
-        "std": 30.3,
-        "ci95_lo": 405.1,
-        "ci95_hi": 461.1,
+        "n": 9,
+        "mean": 429.8,
+        "std": 27.2,
+        "ci95_lo": 408.9,
+        "ci95_hi": 450.6,
         "min": 390.7,
         "max": 478.3,
         "per_unit": [
@@ -56,16 +60,18 @@
           402.7,
           424.0,
           478.3,
-          446.7
+          446.7,
+          413.3,
+          422.7
         ]
       },
       "none_eq": {
         "label": "none_eq",
-        "n": 7,
-        "mean": 436.6,
-        "std": 42.8,
-        "ci95_lo": 397.0,
-        "ci95_hi": 476.2,
+        "n": 9,
+        "mean": 437.0,
+        "std": 41.8,
+        "ci95_lo": 404.9,
+        "ci95_hi": 469.2,
         "min": 392.0,
         "max": 513.3,
         "per_unit": [
@@ -75,20 +81,22 @@
           392.0,
           404.0,
           465.3,
-          445.3
+          445.3,
+          400.0,
+          477.3
         ]
       }
     },
-    "paired_local7": {
+    "paired_local9": {
       "both_eq - none_eq": {
         "label": "both_eq - none_eq",
-        "n": 7,
-        "mean_diff": 47.3,
-        "sd_diff": 145.3,
-        "cohens_d": 0.33,
-        "t": 0.86,
-        "p_twosided_t": 0.4227,
-        "wilcoxon_p": 0.6875,
+        "n": 9,
+        "mean_diff": 36.9,
+        "sd_diff": 127.6,
+        "cohens_d": 0.29,
+        "t": 0.868,
+        "p_twosided_t": 0.4109,
+        "wilcoxon_p": 0.6523,
         "per_unit_diff": [
           88.0,
           -114.6,
@@ -96,18 +104,20 @@
           185.3,
           278.7,
           -88.0,
-          -37.3
+          -37.3,
+          -8.0,
+          9.3
         ]
       },
       "wm_eq_only - none_eq": {
         "label": "wm_eq_only - none_eq",
-        "n": 7,
-        "mean_diff": 21.1,
-        "sd_diff": 72.4,
-        "cohens_d": 0.29,
-        "t": 0.772,
-        "p_twosided_t": 0.4694,
-        "wilcoxon_p": 0.2969,
+        "n": 9,
+        "mean_diff": 13.2,
+        "sd_diff": 67.0,
+        "cohens_d": 0.2,
+        "t": 0.59,
+        "p_twosided_t": 0.5712,
+        "wilcoxon_p": 0.4258,
         "per_unit_diff": [
           -1.4,
           -104.0,
@@ -115,18 +125,20 @@
           69.3,
           10.7,
           8.0,
-          133.3
+          133.3,
+          20.0,
+          -49.3
         ]
       },
       "policy_eq_only - none_eq": {
         "label": "policy_eq_only - none_eq",
-        "n": 7,
-        "mean_diff": -3.5,
-        "sd_diff": 55.3,
-        "cohens_d": -0.06,
-        "t": -0.165,
-        "p_twosided_t": 0.874,
-        "wilcoxon_p": 0.2969,
+        "n": 9,
+        "mean_diff": -7.3,
+        "sd_diff": 51.4,
+        "cohens_d": -0.14,
+        "t": -0.425,
+        "p_twosided_t": 0.6819,
+        "wilcoxon_p": 0.5703,
         "per_unit_diff": [
           52.0,
           -122.6,
@@ -134,18 +146,20 @@
           10.7,
           20.0,
           13.0,
-          1.3
+          1.3,
+          13.3,
+          -54.7
         ]
       },
       "both_eq - wm_eq_only": {
         "label": "both_eq - wm_eq_only",
-        "n": 7,
-        "mean_diff": 26.1,
-        "sd_diff": 145.6,
-        "cohens_d": 0.18,
-        "t": 0.475,
-        "p_twosided_t": 0.6518,
-        "wilcoxon_p": 0.9375,
+        "n": 9,
+        "mean_diff": 23.7,
+        "sd_diff": 128.0,
+        "cohens_d": 0.19,
+        "t": 0.556,
+        "p_twosided_t": 0.5934,
+        "wilcoxon_p": 0.8203,
         "per_unit_diff": [
           89.4,
           -10.6,
@@ -153,18 +167,20 @@
           116.0,
           268.0,
           -96.0,
-          -170.7
+          -170.7,
+          -28.0,
+          58.7
         ]
       },
       "both_eq - policy_eq_only": {
         "label": "both_eq - policy_eq_only",
-        "n": 7,
-        "mean_diff": 50.7,
-        "sd_diff": 124.3,
-        "cohens_d": 0.41,
-        "t": 1.079,
-        "p_twosided_t": 0.3221,
-        "wilcoxon_p": 0.4688,
+        "n": 9,
+        "mean_diff": 44.2,
+        "sd_diff": 110.5,
+        "cohens_d": 0.4,
+        "t": 1.199,
+        "p_twosided_t": 0.2648,
+        "wilcoxon_p": 0.4258,
         "per_unit_diff": [
           36.0,
           8.0,
@@ -172,8 +188,187 @@
           174.7,
           258.7,
           -101.0,
-          -38.7
+          -38.7,
+          -21.3,
+          64.0
         ]
+      }
+    },
+    "_previous_local7_archive": {
+      "primary_local7": {
+        "both_eq": {
+          "label": "both_eq",
+          "n": 7,
+          "mean": 483.8,
+          "std": 110.8,
+          "ci95_lo": 381.3,
+          "ci95_hi": 586.3,
+          "min": 377.3,
+          "max": 682.7,
+          "per_unit": [
+            490.7,
+            398.7,
+            452.0,
+            577.3,
+            682.7,
+            377.3,
+            408.0
+          ]
+        },
+        "wm_eq_only": {
+          "label": "wm_eq_only",
+          "n": 7,
+          "mean": 457.7,
+          "std": 61.0,
+          "ci95_lo": 401.3,
+          "ci95_hi": 514.1,
+          "min": 401.3,
+          "max": 578.7,
+          "per_unit": [
+            401.3,
+            409.3,
+            465.3,
+            461.3,
+            414.7,
+            473.3,
+            578.7
+          ]
+        },
+        "policy_eq_only": {
+          "label": "policy_eq_only",
+          "n": 7,
+          "mean": 433.1,
+          "std": 30.3,
+          "ci95_lo": 405.1,
+          "ci95_hi": 461.1,
+          "min": 390.7,
+          "max": 478.3,
+          "per_unit": [
+            454.7,
+            390.7,
+            434.7,
+            402.7,
+            424.0,
+            478.3,
+            446.7
+          ]
+        },
+        "none_eq": {
+          "label": "none_eq",
+          "n": 7,
+          "mean": 436.6,
+          "std": 42.8,
+          "ci95_lo": 397.0,
+          "ci95_hi": 476.2,
+          "min": 392.0,
+          "max": 513.3,
+          "per_unit": [
+            402.7,
+            513.3,
+            433.3,
+            392.0,
+            404.0,
+            465.3,
+            445.3
+          ]
+        }
+      },
+      "paired_local7": {
+        "both_eq - none_eq": {
+          "label": "both_eq - none_eq",
+          "n": 7,
+          "mean_diff": 47.3,
+          "sd_diff": 145.3,
+          "cohens_d": 0.33,
+          "t": 0.86,
+          "p_twosided_t": 0.4227,
+          "wilcoxon_p": 0.6875,
+          "per_unit_diff": [
+            88.0,
+            -114.6,
+            18.7,
+            185.3,
+            278.7,
+            -88.0,
+            -37.3
+          ]
+        },
+        "wm_eq_only - none_eq": {
+          "label": "wm_eq_only - none_eq",
+          "n": 7,
+          "mean_diff": 21.1,
+          "sd_diff": 72.4,
+          "cohens_d": 0.29,
+          "t": 0.772,
+          "p_twosided_t": 0.4694,
+          "wilcoxon_p": 0.2969,
+          "per_unit_diff": [
+            -1.4,
+            -104.0,
+            32.0,
+            69.3,
+            10.7,
+            8.0,
+            133.3
+          ]
+        },
+        "policy_eq_only - none_eq": {
+          "label": "policy_eq_only - none_eq",
+          "n": 7,
+          "mean_diff": -3.5,
+          "sd_diff": 55.3,
+          "cohens_d": -0.06,
+          "t": -0.165,
+          "p_twosided_t": 0.874,
+          "wilcoxon_p": 0.2969,
+          "per_unit_diff": [
+            52.0,
+            -122.6,
+            1.4,
+            10.7,
+            20.0,
+            13.0,
+            1.3
+          ]
+        },
+        "both_eq - wm_eq_only": {
+          "label": "both_eq - wm_eq_only",
+          "n": 7,
+          "mean_diff": 26.1,
+          "sd_diff": 145.6,
+          "cohens_d": 0.18,
+          "t": 0.475,
+          "p_twosided_t": 0.6518,
+          "wilcoxon_p": 0.9375,
+          "per_unit_diff": [
+            89.4,
+            -10.6,
+            -13.3,
+            116.0,
+            268.0,
+            -96.0,
+            -170.7
+          ]
+        },
+        "both_eq - policy_eq_only": {
+          "label": "both_eq - policy_eq_only",
+          "n": 7,
+          "mean_diff": 50.7,
+          "sd_diff": 124.3,
+          "cohens_d": 0.41,
+          "t": 1.079,
+          "p_twosided_t": 0.3221,
+          "wilcoxon_p": 0.4688,
+          "per_unit_diff": [
+            36.0,
+            8.0,
+            17.3,
+            174.7,
+            258.7,
+            -101.0,
+            -38.7
+          ]
+        }
       }
     },
     "_previous_local5_archive": {
@@ -394,9 +589,9 @@
       }
     },
     "_provenance": {
-      "primary_local7": "本机 RTX3060 7 种子 0,1,2,13,14,15,16；15/16 来自 data/ablation_s15.json / ablation_s16.json 及 code/logs robust 行",
-      "cloud_crosscheck": "云盘异质性披露，不进主表；s9-s12 来自 data/cloud_pulls/ablation_s{9,10,11,12}_youyun_cloud.json；3/4=A10合并对；优云 s15/s16=ablation_s15s16_youyun_cloud.json（与本机15/16并行独立样本）",
-      "note": "v4 扩展：主表由 5→7 本机种子；云盘仅 cross-check。"
+      "primary_local9": "本机 RTX3060 9 种子 0,1,2,13,14,15,16,17,18；17/18 来自 data/ablation_s17s18.json（robust_mean 逐种子）",
+      "cloud_crosscheck": "云盘异质性披露，不进主表；s9-s12 来自 data/cloud_pulls/ablation_s{9,10,11,12}_youyun_cloud.json；3/4=A10合并对；优云 s15/s16=ablation_s15s16_youyun_cloud.json（与本机15/16并行独立样本）；优云无17/18",
+      "note": "v5 扩展：主表由 7→9 本机种子；云盘仅 cross-check。"
     }
   },
   "reward_head": {
