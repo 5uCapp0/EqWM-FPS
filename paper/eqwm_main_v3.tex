@@ -66,7 +66,8 @@ preliminary, with a measured step ratio of $1.3$--$2.7\times$ and flat noisy
 curves. Under this small-model budget, equivariant and non-equivariant
 imagination variants are not distinguishable, and a four-cell ablation pooled
 over nine same-machine seeds finds no significant return gain, with the fully
-equivariant configuration numerically highest but far from significance. A
+equivariant configuration numerically highest but far from significance and
+not stably ordered across seed sets. A
 bootstrap estimate of the effective-sample multiplier is non-monotone and
 cross-machine inconsistent. The theory is presented as upper bounds and an
 explicitly qualitative scaling law, with every experimental support, weak
@@ -542,7 +543,8 @@ returns are in Table~\ref{tab:ablation} and Fig.~\ref{fig:ablation}.
 \caption{Ablation: where equivariance is placed (9 local train seeds; robust
 evaluation; mean$\pm$std with $95\%$ CI). No configuration is significantly
 better than the others; the fully equivariant configuration is numerically
-highest, driven by two high-variance seeds.}
+highest here, an ordering driven by two high-variance seeds and not stable
+across seed sets or machines.}
 \label{tab:ablation}
 \small\setlength{\tabcolsep}{4pt}
 \begin{tabular}{@{}p{0.40\textwidth}ccc@{}}
@@ -564,7 +566,8 @@ none-eq (both standard) & $437.0\pm41.8$ & $[404.9,469.2]$ & --- \\
 seeds. Error bars are $95\%$ confidence intervals; dots are individual local
 seeds; the open diamond is the pooled two-seed A10 cloud cross-check. No
 configuration is significantly better: the paired both-eq vs none-eq
-difference is $+37$ with $p=0.41$.}
+difference is $+37$ with $p=0.41$; the both-eq ordering is not stable
+across seed sets---it flips if the two high-variance seeds are excluded.}
 \label{fig:ablation}
 \end{figure}
 
@@ -572,18 +575,18 @@ Pooling changes the earlier three-seed picture in an important way: the fully
 equivariant configuration is now \emph{numerically highest} ($473.9$ vs
 $437.0$ for none-eq), with a paired difference of $+36.9$ over nine
 same-machine seeds (Cohen's $d=0.29$, paired $t=0.87$, $p=0.41$; Wilcoxon
-$p=0.65$). This is far from significance, the difference is driven by two
-high-variance seeds (13 and 14, returns $577$ and $683$) that also produce
-the widest confidence interval; adding four further seeds (15--18) dilutes the
-gap toward the other components, and the broader cloud cross-check is
-directionally inconsistent across GPUs. The two
-other equivariant components show no signal
+$p=0.65$). This point estimate is fragile rather than informative: it rests on
+the two high-variance seeds 13 and 14 (both-eq returns $577$ and $683$;
+excluding them leaves both-eq $\approx 429$ vs none-eq $\approx 448$, i.e.\
+the ordering flips), and it shrinks monotonically as seeds accumulate
+($+91.2$ at $n{=}5$, $d{=}0.60$; $+47.3$ at $n{=}7$; $+36.9$ at $n{=}9$),
+while the broader cloud cross-check is directionally inconsistent across GPUs.
+The two other equivariant components show no signal
 (wm-eq-only: $+13.2$, $p=0.57$; policy-eq-only: $-7.3$, $p=0.68$). We
 therefore report honestly that \emph{no equivariant component produces a
-significant return gain} at this budget, while noting that the pooled point
-estimate no longer favors the non-equivariant configuration; within-seed
-evaluation variance ($\pm100$--$\pm400$ over 24 episodes) limits the power of
-this ablation. Whether equivariance would help return at larger scale or with
+significant or stable return gain} at this budget; within-seed evaluation
+variance ($\pm100$--$\pm400$ over 24 episodes) limits the power of this
+ablation. Whether equivariance would help return at larger scale or with
 more seeds remains an open question.
 
 \subsection{Experiment 4: bootstrap estimate of the multiplier}
@@ -627,7 +630,8 @@ stability of a near-degenerate predictor; imagination training improves
 sample efficiency by an order of $2\times$ (preliminary; measured ratio
 $\sim$1.3--2.7$\times$); pooled over nine seeds the equivariant components do
 not yield a significant return gain, with the fully equivariant configuration
-numerically highest but far from significance; and the effective-sample
+numerically highest but far from significance, an ordering not stable across
+seed sets or machines; and the effective-sample
 multiplier is not yet a robust measured quantity.
 
 \paragraph{Limitations and future work.}
