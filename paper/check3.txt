@@ -1,0 +1,4 @@
+﻿AFTER_OVERFULL_HBOX=10
+UNDEF/FATAL=NONE
+Output written on eqwm_acmart_v2.pdf (6 pages, 739732 bytes).
+LATEX_WARN=0

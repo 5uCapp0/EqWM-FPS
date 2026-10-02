@@ -1,0 +1,10 @@
+﻿Overfull \hbox (28.54243pt too wide) in paragraph at lines 195--202  ||  \T1/LinuxLibertineT-TLF/m/n/9 (-20) where $\LMS/ntxsy/m/n/9 S$ \T1/LinuxLiberti
+Overfull \hbox (17.78313pt too wide) in paragraph at lines 204--210  ||  [][]\LMS/ntxsy/m/n/9 �\OML/nxlmi/m/it/9 x\LMS/ntxsy/m/n/9 �$ \T1/LinuxLibertine
+Overfull \hbox (1.38799pt too wide) in paragraph at lines 219--222  ||  \T1/LinuxLibertineT-TLF/m/n/9 (-20) canon-i-cal bound is $\OML/nxlmi/m/it/9 R\L
+Overfull \hbox (12.85138pt too wide) in paragraph at lines 281--301  ||  [][]
+Overfull \hbox (5.66028pt too wide) in paragraph at lines 315--317  ||  [][][]\T1/LinuxLibertineT-TLF/m/sc/9 (-20) Theorem 1 (World--mod-el pre-dic-tio
+Overfull \hbox (4.01073pt too wide) in paragraph at lines 326--338  ||  []\T1/LinuxLibertineT-TLF/m/it/9 (-20) Proof s-ketch.[] \T1/LinuxLibertineT-TL
+Overfull \hbox (2.19362pt too wide) in paragraph at lines 352--360  ||  \T1/LinuxLibertineT-TLF/m/n/9 (-20) step roll-out com-pound-s one-step er-ror g
+Overfull \hbox (9.77567pt too wide) in paragraph at lines 446--463  ||  []\T1/LinuxLibertineT-TLF/m/n/9 (-20) Two find-ings mat-ter. \T1/LinuxLibertine
+Overfull \hbox (4.15367pt too wide) in paragraph at lines 446--463  ||  \T1/LinuxLibertineT-TLF/m/n/9 (-20) is com-pa-ra-ble and, if any-thing, margina
+Overfull \hbox (23.89363pt too wide) in paragraph at lines 593--603  ||  []\T1/LinuxLibertineT-TLF/m/it/9 (-20) Limitations and fu-ture work.[] \T1/Lin

@@ -1,0 +1,20 @@
+bibtex: security risk: running with elevated privileges
+This is BibTeX, Version 0.99e (MiKTeX 25.12)
+The top-level auxiliary file: eqwm_main_v2.aux
+The style file: elsarticle-num.bst
+Database file #1: references.bib
+Warning--empty pages in worldmodels2018
+Warning--empty pages in vizdoom2016
+Warning--empty pages in fps2017
+Warning--empty pages in dreamerv1
+Warning--empty pages in dreamerv2
+Warning--empty pages in mbpo2019
+Warning--empty pages in gcnn2016
+Warning--empty pages in mdphomo2020
+Warning--empty pages in so2rl2022
+Warning--empty pages in groupinv2022
+Warning--empty pages in sen2022
+Warning--empty pages in edgi2023
+Warning--empty pages in mcallester1999
+(There were 13 warnings)
+bibtex: major issue: So far, you have not checked for MiKTeX updates.

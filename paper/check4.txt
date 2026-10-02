@@ -1,0 +1,4 @@
+﻿AFTER2_OVERFULL_HBOX=9
+UNDEF/FATAL=NONE
+Output written on eqwm_acmart_v2.pdf (6 pages, 739580 bytes).
+--- table-related overfull (lines 280-305 / 420-435 / 500-515) ---

@@ -1,0 +1,12 @@
+﻿FIGREFS:
+<figs/eqwm_fig1.pdf, id=161, 1129.21875pt x 542.025pt>
+File: figs/eqwm_fig1.pdf Graphic file (type pdf)
+<use figs/eqwm_fig1.pdf>
+Package pdftex.def Info: figs/eqwm_fig1.pdf  used on input line 227.
+[3.3 <./figs/eqwm_fig1.pdf>]
+UNDEF/FATAL:
+NONE
+PAGES:
+Output written on eqwm_acmart_v2.pdf (6 pages, 738734 bytes).
+LATEX_WARN_COUNT=0
+OVERFULL_COUNT=12

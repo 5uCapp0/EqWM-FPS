@@ -1,0 +1,126 @@
+pdflatex: security risk: running with elevated privileges
+This is pdfTeX, Version 3.141592653-2.6-1.40.28 (MiKTeX 25.12) (preloaded format=pdflatex.fmt)
+ restricted \write18 enabled.
+entering extended mode
+(eqwm_main_v2.tex
+LaTeX2e <2025-11-01>
+L3 programming layer <2025-12-24>
+
+(C:\Users\86137\AppData\Local\Programs\MiKTeX\tex/latex/elsarticle\elsarticle.c
+ls
+Document Class: elsarticle 2026/01/09, 3.5: Elsevier Ltd
+(C:\Users\86137\AppData\Local\Programs\MiKTeX\tex/latex/base\fontenc.sty)
+(C:\Users\86137\AppData\Local\Programs\MiKTeX\tex/latex/l3kernel\expl3.sty
+(C:\Users\86137\AppData\Local\Programs\MiKTeX\tex/latex/l3backend\l3backend-pdf
+tex.def))
+(C:\Users\86137\AppData\Local\Programs\MiKTeX\tex/latex/l3packages/xparse\xpars
+e.sty)
+(C:\Users\86137\AppData\Local\Programs\MiKTeX\tex/latex/etoolbox\etoolbox.sty)
+(C:\Users\86137\AppData\Local\Programs\MiKTeX\tex/latex/base\article.cls
+Document Class: article 2025/01/22 v1.4n Standard LaTeX document class
+(C:\Users\86137\AppData\Local\Programs\MiKTeX\tex/latex/base\size12.clo))
+(C:\Users\86137\AppData\Local\Programs\MiKTeX\tex/latex/graphics\graphicx.sty
+(C:\Users\86137\AppData\Local\Programs\MiKTeX\tex/latex/graphics\keyval.sty)
+(C:\Users\86137\AppData\Local\Programs\MiKTeX\tex/latex/graphics\graphics.sty
+(C:\Users\86137\AppData\Local\Programs\MiKTeX\tex/latex/graphics\trig.sty)
+(C:\Users\86137\AppData\Local\Programs\MiKTeX\tex/latex/graphics-cfg\graphics.c
+fg)
+(C:\Users\86137\AppData\Local\Programs\MiKTeX\tex/latex/graphics-def\pdftex.def
+))) (eqwm_main_v2.spl)
+(C:\Users\86137\AppData\Local\Programs\MiKTeX\tex/latex/natbib\natbib.sty))
+(C:\Users\86137\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsmath.sty
+For additional information on amsmath, use the `?' option.
+(C:\Users\86137\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amstext.sty
+(C:\Users\86137\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsgen.sty))
+(C:\Users\86137\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsbsy.sty)
+(C:\Users\86137\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsopn.sty))
+(C:\Users\86137\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\amssymb.sty
+(C:\Users\86137\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\amsfonts.sty))
+ (C:\Users\86137\AppData\Local\Programs\MiKTeX\tex/latex/booktabs\booktabs.sty)
+ (C:\Users\86137\AppData\Local\Programs\MiKTeX\tex/latex/multirow\multirow.sty)
+ (C:\Users\86137\AppData\Local\Programs\MiKTeX\tex/latex/xcolor\xcolor.sty
+(C:\Users\86137\AppData\Local\Programs\MiKTeX\tex/latex/graphics-cfg\color.cfg)
+(C:\Users\86137\AppData\Local\Programs\MiKTeX\tex/latex/graphics\mathcolor.ltx)
+) (C:\Users\86137\AppData\Local\Programs\MiKTeX\tex/latex/url\url.sty)
+(C:\Users\86137\AppData\Local\Programs\MiKTeX\tex/latex/enumitem\enumitem.sty)
+(eqwm_main_v2.aux)
+(C:\Users\86137\AppData\Local\Programs\MiKTeX\tex/context/base/mkii\supp-pdf.mk
+ii
+[Loading MPS to PDF converter (version 2006.09.02).]
+)
+(C:\Users\86137\AppData\Local\Programs\MiKTeX\tex/latex/epstopdf-pkg\epstopdf-b
+ase.sty
+(C:\Users\86137\AppData\Local\Programs\MiKTeX\tex/latex/00miktex\epstopdf-sys.c
+fg)) (C:\Users\86137\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsa.fd)
+(C:\Users\86137\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsb.fd)
+[1{C:/Users/86137/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}] [2]
+Overfull \hbox (4.15099pt too wide) in paragraph at lines 124--129
+\T1/cmr/m/n/12 for \T1/cmtt/m/n/12 health_gathering \T1/cmr/m/n/12 and com-pare
+ them a-gainst matched non-equivariant
+[3]
+Overfull \hbox (1.54744pt too wide) in paragraph at lines 171--186
+ \T1/cmr/m/it/12 E-quiv-ari-ant re-in-force-men-t learn-ing..[] \T1/cmr/m/n/12 
+Group-equivariant con-vo-lu-tion-s were in-
+
+Overfull \hbox (2.42647pt too wide) in paragraph at lines 171--186
+\T1/cmr/m/n/12 while $[]\OT1/cmr/m/n/12 (2)$\T1/cmr/m/n/12 -equivariant poli-ci
+es [[]] and group-invariant rep-re-sen-ta-tion struc-
+[4]
+
+LaTeX Warning: Reference `fig:overview' on page 5 undefined on input line 243.
+
+[5 <./figs/eqwm_fig1.pdf>]
+Overfull \hbox (26.55284pt too wide) in paragraph at lines 289--309
+ [][] 
+[6]
+Overfull \hbox (0.88623pt too wide) in paragraph at lines 334--346
+ \T1/cmr/m/it/12 Proof s-ketch..[] \T1/cmr/m/n/12 S-tart from the s-tan-dard PA
+C-Bayes in-equal-i-ty $\OML/cmm/m/it/12 R\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 ^^^\
+OT1/cmr/m/n/12 ) \OMS/cmsy/m/n/12 ^^T \OML/cmm/m/it/12 R[]\OT1/cmr/m/n/12 (\OML
+/cmm/m/it/12 ^^^\OT1/cmr/m/n/12 ) +
+[7] [8]
+Overfull \hbox (21.07506pt too wide) in paragraph at lines 432--441
+ [][] 
+[9] [10 <./figs/fig_wm_reward.pdf>] [11 <./figs/fig_fewshot.pdf>] [12] [13 <./f
+igs/fig_ablation.pdf>] (eqwm_main_v2.bbl [14 <./figs/fig_meff.pdf>] [15]
+[16]) [17] (eqwm_main_v2.aux)
+
+LaTeX Warning: There were undefined references.
+
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
+ )
+(see the transcript file for additional information) <C:\Users\86137\AppData\Lo
+cal\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ectt1000.pk> <C:\Users\86137\AppD
+ata\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm1000.pk> <C:\Users\8613
+7\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\eccc1200.pk> <C:\User
+s\86137\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ectt1200.pk> <C
+:\Users\86137\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecti1200.
+pk> <C:\Users\86137\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecb
+x1200.pk> <C:\Users\86137\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi6
+00\ecti1000.pk> <C:\Users\86137\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/e
+c/dpi600\ecti0700.pk> <C:\Users\86137\AppData\Local\MiKTeX\fonts/pk/ljfour/jkna
+ppen/ec/dpi600\ecrm0800.pk> <C:\Users\86137\AppData\Local\MiKTeX\fonts/pk/ljfou
+r/jknappen/ec/dpi600\ecrm1200.pk> <C:\Users\86137\AppData\Local\MiKTeX\fonts/pk
+/ljfour/jknappen/ec/dpi600\ecrm1728.pk><C:/Users/86137/AppData/Local/Programs/M
+iKTeX/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Users/86137/AppData/Local/P
+rograms/MiKTeX/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Users/86137/AppDat
+a/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/861
+37/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/
+Users/86137/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi8.
+pfb><C:/Users/86137/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/c
+m/cmr10.pfb><C:/Users/86137/AppData/Local/Programs/MiKTeX/fonts/type1/public/am
+sfonts/cm/cmr12.pfb><C:/Users/86137/AppData/Local/Programs/MiKTeX/fonts/type1/p
+ublic/amsfonts/cm/cmr6.pfb><C:/Users/86137/AppData/Local/Programs/MiKTeX/fonts/
+type1/public/amsfonts/cm/cmr7.pfb><C:/Users/86137/AppData/Local/Programs/MiKTeX
+/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Users/86137/AppData/Local/Programs
+/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/86137/AppData/Local
+/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy6.pfb><C:/Users/86137/AppDa
+ta/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy7.pfb><C:/Users/861
+37/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/U
+sers/86137/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/symbols/ms
+bm10.pfb>
+Output written on eqwm_main_v2.pdf (17 pages, 395745 bytes).
+Transcript written on eqwm_main_v2.log.
+pdflatex: major issue: So far, you have not checked for MiKTeX updates.

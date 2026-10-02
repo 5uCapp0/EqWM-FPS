@@ -1,0 +1,90 @@
+{
+  "schema_version": "1",
+  "source_path": "C:\\Users\\86137\\Desktop\\科研\\教材 - 副本\\EqWM论文项目\\paper\\eqwm_acmart_v2.pdf",
+  "source_filename": "eqwm_acmart_v2.pdf",
+  "source_hash": "f893b9775acf",
+  "source_size_bytes": 739580,
+  "kind": "pdf",
+  "rendered_at_utc": "2026-10-01T17:08:20+00:00",
+  "output_dir": "C:\\Users\\86137\\Desktop\\科研\\教材 - 副本\\EqWM论文项目\\paper\\.preview\\f893b9775acf",
+  "page_count": 6,
+  "rendered_page_count": 6,
+  "collage_count": 1,
+  "extracted_text_chars": 32320,
+  "text_relpath": "text.md",
+  "thumbnail_relpath": "thumb.jpg",
+  "pages": [
+    {
+      "page": 1,
+      "relpath": "pages\\p001.png",
+      "size_bytes": 531686,
+      "width": 1275,
+      "height": 1650
+    },
+    {
+      "page": 2,
+      "relpath": "pages\\p002.png",
+      "size_bytes": 518889,
+      "width": 1275,
+      "height": 1650
+    },
+    {
+      "page": 3,
+      "relpath": "pages\\p003.png",
+      "size_bytes": 333909,
+      "width": 1275,
+      "height": 1650
+    },
+    {
+      "page": 4,
+      "relpath": "pages\\p004.png",
+      "size_bytes": 458219,
+      "width": 1275,
+      "height": 1650
+    },
+    {
+      "page": 5,
+      "relpath": "pages\\p005.png",
+      "size_bytes": 386541,
+      "width": 1275,
+      "height": 1650
+    },
+    {
+      "page": 6,
+      "relpath": "pages\\p006.png",
+      "size_bytes": 488099,
+      "width": 1275,
+      "height": 1650
+    }
+  ],
+  "collages": [
+    {
+      "relpath": "collages\\c1.jpg",
+      "covers_pages": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "grid_cols": 3,
+      "grid_rows": 2,
+      "size_bytes": 700026
+    }
+  ],
+  "warnings": [],
+  "options": {
+    "max_pages": 12,
+    "collage": true,
+    "page_range": null,
+    "thumbnail": true,
+    "text_only": false,
+    "jpeg_quality": 85,
+    "out_max_dim": 2048
+  },
+  "summary": {
+    "total_pages": 6,
+    "rendered_pages": 6
+  }
+}

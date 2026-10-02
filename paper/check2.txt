@@ -1,0 +1,11 @@
+﻿FIGREFS:
+<figs/eqwm_fig1.pdf, id=30, 1129.21875pt x 542.025pt>
+File: figs/eqwm_fig1.pdf Graphic file (type pdf)
+<use figs/eqwm_fig1.pdf>
+Package pdftex.def Info: figs/eqwm_fig1.pdf  used on input line 236.
+[5 <./figs/eqwm_fig1.pdf>]
+UNDEF/FATAL:
+NONE
+PAGES:
+Output written on eqwm_main_v2.pdf (16 pages, 394679 bytes).
+LATEX_WARN_COUNT=0

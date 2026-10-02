@@ -1,0 +1,70 @@
+﻿bibtex : bibtex: security risk: running with elevated privileges
+所在位置 行:6 字符: 32
++   if (Test-Path "$main.aux") { bibtex "$main" *> "$main.bib.txt" }
++                                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (bibtex: securit...ated privileges:String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+This is BibTeX, Version 0.99e (MiKTeX 25.12)
+The top-level auxiliary file: main.aux
+The style file: ACM-Reference-Format.bst
+Database file #1: references.bib
+Warning--empty publisher in edgi2023
+Warning--empty address in edgi2023
+Warning--page numbers missing in both pages and numpages fields in edgi2023
+Warning--no number and no volume in emerald2025
+Warning--page numbers missing in both pages and numpages fields in emerald2025
+Warning--empty publisher in gcnn2016
+Warning--empty address in gcnn2016
+Warning--page numbers missing in both pages and numpages fields in gcnn2016
+Warning--no number and no volume in eqmuzero2023
+Warning--page numbers missing in both pages and numpages fields in eqmuzero2023
+Warning--empty address in bootstrap1993
+Warning--empty publisher in worldmodels2018
+Warning--empty address in worldmodels2018
+Warning--page numbers missing in both pages and numpages fields in worldmodels2018
+Warning--empty publisher in dreamerv1
+Warning--empty address in dreamerv1
+Warning--page numbers missing in both pages and numpages fields in dreamerv1
+Warning--empty publisher in dreamerv2
+Warning--empty address in dreamerv2
+Warning--page numbers missing in both pages and numpages fields in dreamerv2
+Warning--no number and no volume in dreamerv3
+Warning--page numbers missing in both pages and numpages fields in dreamerv3
+Warning--no number and no volume in dreamer42025
+Warning--page numbers missing in both pages and numpages fields in dreamer42025
+Warning--empty publisher in mbpo2019
+Warning--empty address in mbpo2019
+Warning--page numbers missing in both pages and numpages fields in mbpo2019
+Warning--empty publisher in vizdoom2016
+Warning--empty address in vizdoom2016
+Warning--page numbers missing in both pages and numpages fields in vizdoom2016
+Warning--empty publisher in fps2017
+Warning--empty address in fps2017
+Warning--page numbers missing in both pages and numpages fields in fps2017
+Warning--no number and no volume in multigroup2025
+Warning--page numbers missing in both pages and numpages fields in multigroup2025
+Warning--empty publisher in mcallester1999
+Warning--empty address in mcallester1999
+Warning--page numbers missing in both pages and numpages fields in mcallester1999
+Warning--no number and no volume in geodrl2020
+Warning--page numbers missing in both pages and numpages fields in geodrl2020
+Warning--empty publisher in sen2022
+Warning--empty address in sen2022
+Warning--page numbers missing in both pages and numpages fields in sen2022
+Warning--no number and no volume in ppo2017
+Warning--page numbers missing in both pages and numpages fields in ppo2017
+Warning--empty publisher in groupinv2022
+Warning--empty address in groupinv2022
+Warning--page numbers missing in both pages and numpages fields in groupinv2022
+Warning--empty address in suttonbarto2018
+Warning--empty publisher in mdphomo2020
+Warning--empty address in mdphomo2020
+Warning--page numbers missing in both pages and numpages fields in mdphomo2020
+Warning--empty publisher in so2rl2022
+Warning--empty address in so2rl2022
+Warning--page numbers missing in both pages and numpages fields in so2rl2022
+Warning--no number and no volume in pacbayesrl2025
+Warning--page numbers missing in both pages and numpages fields in pacbayesrl2025
+(There were 57 warnings)
+bibtex: major issue: So far, you have not checked for MiKTeX updates.
