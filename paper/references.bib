@@ -5,6 +5,17 @@
 %     EMERALD is a masked-latent-transformer world model (Burchi, 2025).
 %   - LoRA / T5 / AdamW / unverified "attention in RL" items : off-topic or
 %     untraceable in the draft, removed to avoid ghost references.
+% Second audit (2026-10-02, Neural Networks submission) -- fixed against
+% arXiv + Crossref records:
+%   - dreamerv1   : was PlaNet title/authors; now correct Dream-to-Control
+%                   (Dreamer, Hafner et al., ICML 2020).
+%   - edgi2023    : author list corrected to Brehmer, Bose, de Haan, Cohen.
+%   - geodrl2020  : author names corrected (Arnab Kumar Mondal, Pratheeksha
+%                   Nair, Kaleem Siddiqi).
+%   - emerald2025 : second author R. Timofte added.
+%   - dreamerv3   : title aligned to the published Nature version.
+%   - dreamer42025: exact arXiv title (no "(Dreamer4)" suffix).
+%   - pacbayesrl2025: upgraded to ICML 2026 (camera-ready confirmed).
 
 @inproceedings{vizdoom2016,
   author    = {Kempka, Micha{\l} and Wydmuch, Marek and Runc, Grzegorz and Toczek, Jakub and Ja{\'s}kowski, Wojciech},
@@ -24,10 +35,10 @@
 
 @article{dreamerv3,
   author  = {Hafner, Danijar and Pasukonis, Jurgis and Ba, Jimmy and Lillicrap, Timothy},
-  title   = {Mastering Diverse Domains through World Models},
+  title   = {Mastering Diverse Control Tasks through World Models},
   journal = {Nature},
   year    = {2025},
-  note    = {arXiv:2301.04104}
+  note    = {, arXiv:2301.04104}
 }
 
 @inproceedings{dreamerv2,
@@ -39,8 +50,8 @@
 }
 
 @inproceedings{dreamerv1,
-  author    = {Hafner, Danijar and Lillicrap, Timothy and Fischer, Ian and Villegas, Ruben and Ha, David and Lee, Honglak and Davidson, James},
-  title     = {Learning Latent Dynamics for Planning from Pixels},
+  author    = {Hafner, Danijar and Lillicrap, Timothy and Ba, Jimmy and Norouzi, Mohammad},
+  title     = {Dream to Control: Learning Behaviors by Latent Imagination},
   booktitle = {Proc. International Conference on Machine Learning (ICML)},
   year      = {2020},
   note      = {arXiv:1912.01603}
@@ -94,7 +105,7 @@
 }
 
 @article{geodrl2020,
-  author  = {Mondal, Sayak Ray and Nair, Arun and Siddiqi, Biswajit},
+  author  = {Mondal, Arnab Kumar and Nair, Pratheeksha and Siddiqi, Kaleem},
   title   = {Group Equivariant Deep Reinforcement Learning},
   journal = {arXiv preprint arXiv:2007.03437},
   year    = {2020}
@@ -109,7 +120,7 @@
 }
 
 @inproceedings{edgi2023,
-  author    = {Brehmer, Johann and Rahaman, Niki and Deac, Andreea and Geng, Yilun and Li, Zhuotong and Strobelt, Hans and Chintala, Soumith and Henaff, Mikael and Weimer, Markus},
+  author    = {Brehmer, Johann and Bose, Joey and de Haan, Pim and Cohen, Taco},
   title     = {{EDGI}: Equivariant Diffusion for Planning with Embodied Agents},
   booktitle = {Advances in Neural Information Processing Systems (NeurIPS)},
   year      = {2023},
@@ -124,7 +135,7 @@
 }
 
 @article{emerald2025,
-  author  = {Burchi, Maxime},
+  author  = {Burchi, Maxime and Timofte, Radu},
   title   = {Accurate and Efficient World Modeling with Masked Latent Transformers},
   journal = {arXiv preprint arXiv:2507.04075},
   year    = {2025}
@@ -132,16 +143,18 @@
 
 @article{dreamer42025,
   author  = {Hafner, Danijar and Yan, Wilson and Lillicrap, Timothy},
-  title   = {Training Agents Inside of Scalable World Models ({Dreamer4})},
+  title   = {Training Agents Inside of Scalable World Models},
   journal = {arXiv preprint arXiv:2509.24527},
-  year    = {2025}
+  year    = {2025},
+  note    = {, Dreamer~4}
 }
 
-@article{pacbayesrl2025,
-  author  = {Zitouni, Abdelkrim and Hennequin, Mehdi and Agoun, Juba and Horache, Ryan and Kabachi, Nadia and Rivasplata, Omar},
-  title   = {{PAC-Bayesian} Reinforcement Learning Trains Generalizable Policies},
-  journal = {arXiv preprint arXiv:2510.10544},
-  year    = {2025}
+@inproceedings{pacbayesrl2025,
+  author    = {Zitouni, Abdelkrim and Hennequin, Mehdi and Agoun, Juba and Horache, Ryan and Kabachi, Nadia and Rivasplata, Omar},
+  title     = {{PAC-Bayesian} Reinforcement Learning Trains Generalizable Policies},
+  booktitle = {Proc. International Conference on Machine Learning (ICML)},
+  year      = {2026},
+  note      = {arXiv:2510.10544}
 }
 
 @inproceedings{mcallester1999,
